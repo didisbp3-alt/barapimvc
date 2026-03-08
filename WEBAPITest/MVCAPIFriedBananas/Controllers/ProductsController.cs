@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MVCAPIFriedBananas.Models;
 using MVCAPIFriedBananas.Services;
-using MVCAPIFriedBananas.ViewModels;
 using MVCAPIFriedBananas.Views.ViewModels;
-using System.Linq;
+using System.Text.Json;
 
 namespace MVCAPIFriedBananas.Controllers
 {
@@ -13,6 +12,7 @@ namespace MVCAPIFriedBananas.Controllers
         private readonly ProductsApiClient _products;
         private readonly OrderApiClient _orders;
         private readonly CategoriesApiClient _categories;
+        private const string FavSessionKey = "UserFavorites";
 
         public ProductsController(ProductsApiClient products, OrderApiClient orders, CategoriesApiClient categoriesApiClient)
         {
@@ -21,12 +21,48 @@ namespace MVCAPIFriedBananas.Controllers
             _categories = categoriesApiClient;
         }
 
+        // ── Helpers: session-based favorites ───────────────────────────
+
+        private HashSet<int> GetFavorites()
+        {
+            var json = HttpContext.Session.GetString(FavSessionKey);
+            if (string.IsNullOrEmpty(json)) return new HashSet<int>();
+            return JsonSerializer.Deserialize<HashSet<int>>(json) ?? new HashSet<int>();
+        }
+
+        private void SaveFavorites(HashSet<int> favs) =>
+            HttpContext.Session.SetString(FavSessionKey, JsonSerializer.Serialize(favs));
+
+        private void ApplyFavoritesToProducts(IEnumerable<Product> products)
+        {
+            var favs = GetFavorites();
+            foreach (var p in products)
+                p.IsFavorite = favs.Contains(p.ProdId);
+        }
+
+        // POST: /Products/ToggleFavorite/{id}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ToggleFavorite(int id)
+        {
+            var favs = GetFavorites();
+            bool isFav;
+            if (favs.Contains(id)) { favs.Remove(id); isFav = false; }
+            else { favs.Add(id); isFav = true; }
+            SaveFavorites(favs);
+            return Json(new { isFavorite = isFav, productId = id });
+        }
+
+        // ── Main product listing ────────────────────────────────────────
+
         [HttpGet]
         public async Task<IActionResult> Index([FromQuery] ProductsPageViewModel query)
         {
             var products = (await _products.GetProductsAsync())
-                .Where(p => p.ProductType == 0) // Only FOOD items
+                .Where(p => p.ProductType == 0)
                 .ToList();
+
+            ApplyFavoritesToProducts(products);
 
             var order = await _orders.GetCartAsync();
             var cartCount = order?.Items?.Sum(i => i.Quantity) ?? 0;
@@ -54,6 +90,7 @@ namespace MVCAPIFriedBananas.Controllers
                 SelectedAllergen = query.SelectedAllergen,
                 PriceRange = query.PriceRange,
                 Search = query.Search,
+                FavoritesOnly = query.FavoritesOnly,
                 Items = filtered.Select(p => ToCard(p, categoriesList)).ToList(),
                 CartCount = cartCount
             };
@@ -65,8 +102,8 @@ namespace MVCAPIFriedBananas.Controllers
         [Authorize]
         public async Task<IActionResult> AdminIndex([FromQuery] ProductsPageViewModel query)
         {
-            // Get all products (not just FOOD)
             var products = (await _products.GetProductsAsync()).ToList();
+            ApplyFavoritesToProducts(products);
 
             var order = await _orders.GetCartAsync();
             var cartCount = order?.Items?.Sum(i => i.Quantity) ?? 0;
@@ -95,6 +132,7 @@ namespace MVCAPIFriedBananas.Controllers
                 SelectedAllergen = query.SelectedAllergen,
                 PriceRange = query.PriceRange,
                 Search = query.Search,
+                FavoritesOnly = query.FavoritesOnly,
                 Items = filtered.Select(p => ToCard(p, categoriesList)).ToList(),
                 CartCount = cartCount
             };
@@ -106,8 +144,10 @@ namespace MVCAPIFriedBananas.Controllers
         public async Task<IActionResult> Filter([FromQuery] ProductsPageViewModel query)
         {
             var products = (await _products.GetProductsAsync())
-                .Where(p => p.ProductType == 0) // Only FOOD items
+                .Where(p => p.ProductType == 0)
                 .ToList();
+
+            ApplyFavoritesToProducts(products);
 
             var categoriesList = await _categories.GetCategoriesAsync();
 
@@ -118,6 +158,33 @@ namespace MVCAPIFriedBananas.Controllers
             return PartialView("_ProductCard", filtered);
         }
 
+        // GET: /Products/Highlights
+        [HttpGet]
+        public async Task<IActionResult> Highlights()
+        {
+            var products = (await _products.GetProductsAsync())
+                .Where(p => p.ProductType == 0)
+                .ToList();
+
+            ApplyFavoritesToProducts(products);
+
+            var favIds = GetFavorites();
+            var categoriesList = await _categories.GetCategoriesAsync();
+
+            // Highlights = products with a discount or that are favorited
+            var highlighted = products
+                .Where(p => (p.DiscountPercent > 0) || favIds.Contains(p.ProdId))
+                .ToList();
+
+            var vm = new ProductsPageViewModel
+            {
+                Items = highlighted.Select(p => ToCard(p, categoriesList)).ToList(),
+                Categories = categoriesList.Select(c => c.Name).Distinct(StringComparer.OrdinalIgnoreCase).OrderBy(c => c).ToList(),
+            };
+
+            return View(vm);
+        }
+
         public async Task<IActionResult> Details(int id)
         {
             var p = await _products.GetProductAsync(id);
@@ -125,6 +192,9 @@ namespace MVCAPIFriedBananas.Controllers
 
             var categoriesList = await _categories.GetCategoriesAsync();
             var categoryName = categoriesList.FirstOrDefault(c => c.CatId == p.CatId)?.Name ?? $"Categoria {p.CatId}";
+
+            var favs = GetFavorites();
+            p.IsFavorite = favs.Contains(p.ProdId);
 
             var vm = new ProductsViewModel
             {
@@ -137,14 +207,21 @@ namespace MVCAPIFriedBananas.Controllers
                 ImageUrl = p.ImgPath,
                 DiscountPercent = p.DiscountPercent,
                 ProductType = p.ProductType,
+                IsFavorite = p.IsFavorite,
+                Cat_Id = p.CatId,
                 CategoryName = categoryName
             };
             return View(vm);
         }
 
+        // ── Filters ─────────────────────────────────────────────────────
+
         private static IEnumerable<Product> ApplyFilters(IEnumerable<Product> products, ProductsPageViewModel q)
         {
             var list = products;
+
+            if (q.FavoritesOnly)
+                list = list.Where(p => p.IsFavorite == true);
 
             if (!string.IsNullOrWhiteSpace(q.SelectedCategory))
                 list = list.Where(p =>
@@ -209,12 +286,13 @@ namespace MVCAPIFriedBananas.Controllers
                 .Where(a => !string.IsNullOrWhiteSpace(a));
         }
 
+        // ── Admin CRUD ───────────────────────────────────────────────────
+
         // GET: Products/Create
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> Create()
         {
-            // Optionally, pass categories for dropdown
             var categories = await _categories.GetCategoriesAsync();
             ViewBag.Categories = categories;
             return View(new ProductsViewModel());
@@ -253,6 +331,12 @@ namespace MVCAPIFriedBananas.Controllers
                 ModelState.AddModelError("", "Erro ao criar produto.");
                 ViewBag.Categories = await _categories.GetCategoriesAsync();
                 return View(model);
+            }
+
+            // Handle image upload if provided
+            if (model.ImageFile != null && model.ImageFile.Length > 0 && created.ProdId > 0)
+            {
+                await _products.UploadProductImageAsync(created.ProdId, model.ImageFile);
             }
 
             return RedirectToAction(nameof(AdminIndex));
@@ -308,6 +392,12 @@ namespace MVCAPIFriedBananas.Controllers
                 ModelState.AddModelError("", "Erro ao atualizar produto.");
                 ViewBag.Categories = await _categories.GetCategoriesAsync();
                 return View(model);
+            }
+
+            // Handle image upload after update
+            if (model.ImageFile != null && model.ImageFile.Length > 0)
+            {
+                await _products.UploadProductImageAsync(id, model.ImageFile);
             }
 
             return RedirectToAction(nameof(AdminIndex));

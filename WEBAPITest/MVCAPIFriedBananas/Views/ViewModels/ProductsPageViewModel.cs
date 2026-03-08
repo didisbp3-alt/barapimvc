@@ -15,5 +15,6 @@ namespace MVCAPIFriedBananas.Views.ViewModels
         public string? PriceRange { get; set; }   // "", "lt5", "5to10", "gt10"
         public string? Search { get; set; }
         public int CartCount { get; set; }
+        public bool FavoritesOnly { get; set; }
     }
 }

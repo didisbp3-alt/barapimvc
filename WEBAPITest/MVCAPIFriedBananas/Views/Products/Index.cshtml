@@ -11,7 +11,7 @@
             <h1>Explore produtos e novidades.</h1>
             <p>Filtre por categoria, alergénios, preço e adicione aos favoritos.</p>
             <div class="hero-actions">
-                <a class="btn btn-primary" href="@Url.Action("Highlights", "Products")">Ver destaques</a>
+                <a class="btn btn-primary" href="@Url.Action("Highlights", "Products")">⭐ Destaques</a>
                 <a class="btn btn-ghost" href="@Url.Action("Index", "Menu")">Ver menus</a>
             </div>
             <div class="hero-stats">
@@ -35,12 +35,12 @@
                     <p class="muted">@highlight.Description</p>
                     <div class="row gap-1">
                         <button type="button"
-                        class="btn btn-primary w-100"
-                        data-add-cart
-                        data-product-id="@highlight.ProdId">
+                                class="btn btn-primary btn-small"
+                                data-add-cart
+                                data-product-id="@highlight.ProdId">
                             🛒 Adicionar
                         </button>
-                        <a class="btn btn-ghost w-100" href="@Url.Action("Details", "Products", new { id = highlight.ProdId })">Detalhes</a>
+                        <a class="btn btn-ghost btn-small" href="@Url.Action("Details", "Products", new { id = highlight.ProdId })">Detalhes</a>
                     </div>
                 </div>
             }
@@ -55,12 +55,8 @@
     {
         <div class="admin-toolbar">
             <span class="admin-toolbar-label">⚙️ Gestão</span>
-            <a class="btn btn-primary btn-small" href="@Url.Action("AdminIndex", "Products")">
-                📦 Gerir Produtos
-            </a>
-            <a class="btn btn-ghost btn-small" href="@Url.Action("AdminIndex", "Categories")">
-                🏷️ Gerir Categorias
-            </a>
+            <a class="btn btn-primary btn-small" href="@Url.Action("AdminIndex", "Products")">📦 Gerir Produtos</a>
+            <a class="btn btn-ghost btn-small" href="@Url.Action("AdminIndex", "Categories")">🏷️ Gerir Categorias</a>
         </div>
     }
 
@@ -102,6 +98,13 @@
             </select>
         </div>
 
+        <div style="display:flex;align-items:flex-end;gap:0.4rem;">
+            <label class="fav-filter-label @(Model.FavoritesOnly ? "active" : "")">
+                <input type="checkbox" name="FavoritesOnly" value="true" @(Model.FavoritesOnly ? "checked" : "") onchange="this.form.submit()" style="display:none;" />
+                ❤️ Favoritos
+            </label>
+        </div>
+
         <button class="btn btn-primary btn-small" type="submit">Filtrar</button>
         <button class="btn btn-ghost btn-small" type="button" id="clearFilters">Limpar</button>
     </form>
@@ -115,32 +118,24 @@
     <script>
         const token = document.querySelector('meta[name="request-verification-token"]')?.content;
         const isLoggedIn = @Json.Serialize(User.Identity?.IsAuthenticated ?? false);
+        const toggleFavUrl = '@Url.Action("ToggleFavorite", "Products")';
+        const addCartUrl = '@Url.Action("Add", "Cart")';
 
+        // ── Cart ─────────────────────────────────────────────────────────
         async function postCart(productId) {
-            if (!isLoggedIn) {
-                window.location.href = '/Auth/Login';
-                return;
-            }
+            if (!isLoggedIn) { window.location.href = '/Auth/Login'; return; }
 
             const params = new URLSearchParams();
             params.append('id', productId);
             params.append('qty', 1);
             if (token) params.append('__RequestVerificationToken', token);
 
-            const res = await fetch('@Url.Action("Add", "Cart")', {
+            const res = await fetch(addCartUrl, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'X-Requested-With': 'XMLHttpRequest'
-                },
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'X-Requested-With': 'XMLHttpRequest' },
                 body: params.toString()
             });
-
-            if (res.status === 401 || res.redirected) {
-                window.location.href = '/Auth/Login';
-                return;
-            }
-
+            if (res.status === 401 || res.redirected) { window.location.href = '/Auth/Login'; return; }
             if (!res.ok) throw new Error('Erro ao adicionar ao carrinho');
             const json = await res.json().catch(() => ({}));
             const badge = document.querySelector('[data-cart-count]');
@@ -151,38 +146,52 @@
             root.querySelectorAll('[data-add-cart]').forEach(btn => {
                 btn.onclick = async () => {
                     const id = btn.getAttribute('data-product-id');
-                    const originalText = btn.textContent;
-                    btn.disabled = true;
-                    btn.textContent = '...';
+                    const orig = btn.textContent;
+                    btn.disabled = true; btn.textContent = '...';
                     try {
                         await postCart(id);
-                        btn.textContent = '\u2713 Adicionado';
+                        btn.textContent = '✓ Adicionado';
                         btn.style.background = '#22c55e';
-                        setTimeout(() => {
-                            btn.textContent = originalText;
-                            btn.style.background = '';
-                            btn.disabled = false;
-                        }, 1500);
+                        setTimeout(() => { btn.textContent = orig; btn.style.background = ''; btn.disabled = false; }, 1500);
                     } catch (e) {
-                        console.error(e);
-                        btn.textContent = originalText;
-                        btn.disabled = false;
+                        console.error(e); btn.textContent = orig; btn.disabled = false;
                         alert('Não foi possível adicionar ao carrinho.');
                     }
                 };
             });
         }
 
+        // ── Favorites ────────────────────────────────────────────────────
+        async function toggleFav(productId) {
+            const params = new URLSearchParams();
+            params.append('id', productId);
+            if (token) params.append('__RequestVerificationToken', token);
+
+            const res = await fetch(toggleFavUrl + '/' + productId, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'X-Requested-With': 'XMLHttpRequest' },
+                body: params.toString()
+            });
+            if (!res.ok) throw new Error('Erro ao guardar favorito');
+            return await res.json();
+        }
+
         function wireFavButtons(root = document) {
-            root.querySelectorAll("[data-fav-toggle]").forEach(btn => {
+            root.querySelectorAll('[data-fav-toggle]').forEach(btn => {
                 btn.onclick = async () => {
-                    const isActive = btn.classList.contains("active");
-                    btn.classList.toggle("active", !isActive);
-                    btn.textContent = !isActive ? "\u2665" : "\u2661";
+                    const id = btn.getAttribute('data-product-id');
+                    try {
+                        const data = await toggleFav(id);
+                        btn.classList.toggle('active', data.isFavorite);
+                        btn.textContent = data.isFavorite ? '♥' : '♡';
+                    } catch (e) {
+                        console.error(e);
+                    }
                 };
             });
         }
 
+        // ── AJAX product filter ──────────────────────────────────────────
         async function fetchProducts(queryString) {
             const res = await fetch('@Url.Action("Filter", "Products")' + queryString, {
                 headers: { 'X-Requested-With': 'XMLHttpRequest' }
@@ -209,4 +218,28 @@
         wireCartButtons();
         wireFavButtons();
     </script>
+    <style>
+        .fav-filter-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            height: 2.5rem;
+            padding: 0 0.875rem;
+            border-radius: 0.625rem;
+            border: 1.5px solid var(--p-border);
+            background: transparent;
+            color: var(--p-muted);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 180ms ease;
+            user-select: none;
+        }
+        .fav-filter-label:hover,
+        .fav-filter-label.active {
+            border-color: #e87600;
+            color: #e87600;
+            background: rgba(232,118,0,0.08);
+        }
+    </style>
 }

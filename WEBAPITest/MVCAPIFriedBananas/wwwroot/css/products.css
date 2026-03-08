@@ -43,7 +43,7 @@ body[data-theme="dark"] {
     display: grid;
     grid-template-columns: minmax(18rem, 1.1fr) minmax(16rem, 0.9fr);
     gap: 1.5rem;
-    align-items: center;
+    align-items: start;
     margin-bottom: 1.5rem;
 }
 
@@ -108,18 +108,18 @@ body[data-theme="dark"] {
 .hero-card {
     display: grid;
     grid-template-columns: 1fr;
-    align-self: stretch;
+    align-self: auto;
     min-width: 0; /* prevent overflow */
 }
 
 /* Highlight card in hero (first product) */
 .highlight-card {
-    height: 100%;
-    min-height: 0;
+    height: auto;
     overflow: visible;
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
+    padding: 1.25rem;
 }
 
 .highlight-card h3 {
@@ -131,12 +131,19 @@ body[data-theme="dark"] {
 }
 
 .highlight-card .muted {
+    color: var(--p-muted);
+    font-size: 0.85rem;
+    line-height: 1.45;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    flex: 1;
-    min-height: 0;
+}
+
+.highlight-card .row {
+    margin-top: 0.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /* Admin toolbar */
