@@ -1,0 +1,38 @@
+﻿@model IEnumerable<DTO_MVCAPIContracts.Contracts.LunchBookingDto>
+
+@{
+    ViewData["Title"] = "Minhas Marcações";
+}
+
+<h1>Minhas Marcações</h1>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Não tem marcações.</div>
+}
+else
+{
+    <div class="card">
+        <div class="card-body">
+            <ul class="list-unstyled">
+                @foreach (var b in Model)
+                {
+                    <li class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <strong>@b.Date.ToString("dd MMM yyyy")</strong>
+                                <div class="text-muted">@("Menu id: " + b.MenuId)</div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <form method="post" asp-controller="Booking" asp-action="Cancel">
+                                    <input type="hidden" name="bookingId" value="@b.Id" />
+                                    <button class="btn btn-ghost">Cancelar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+}

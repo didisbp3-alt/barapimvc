@@ -1,0 +1,176 @@
+﻿@model MVCAPIFriedBananas.Views.ViewModels.ProductsPageViewModel
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/products.css" />
+}
+
+<div class="products-page">
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Explore produtos e novidades.</h1>
+            <p>Filtre por categoria, alergénios, preço e adicione aos favoritos.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="@Url.Action("Highlights", "Products")">Ver destaques</a>
+                <a class="btn btn-ghost" href="@Url.Action("Index", "Menu")">Ver menus</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-chip"><span class="dot"></span> Itens frescos hoje</div>
+                <div class="stat-chip"><span class="dot"></span> Entrega rápida</div>
+            </div>
+        </div>
+        <div class="hero-card">
+            @{
+                var highlight = Model.Items?.FirstOrDefault();
+                string catName(object? catId, string? name) => !string.IsNullOrWhiteSpace(name) ? name : $"Categoria {catId}";
+            }
+            @if (highlight != null)
+            {
+                <div class="card">
+                    <div class="meta">
+                        <strong class="accent">@catName(highlight.Cat_Id, highlight.CategoryName)</strong>
+                        <span>@highlight.Price.ToString("C")</span>
+                    </div>
+                    <h3>@highlight.Name</h3>
+                    <p class="muted">@highlight.Description</p>
+                    <div class="row gap-1">
+                        <button type="button"
+                        class="btn btn-primary w-100"
+                        data-add-cart
+                        data-product-id="@highlight.ProdId">
+                            Adicionar
+                        </button>
+                        <a class="btn btn-ghost flex-1" href="@Url.Action("Details", "Products", new { id = highlight.ProdId })">Detalhes</a>
+                    </div>
+                </div>
+            }
+        </div>
+
+
+            <div class="mb-3" style="text-align:right;">
+                <a class="btn btn-primary btn-small" href="@Url.Action("AdminIndex", "Products")">
+                    Gerir Produtos
+                </a>
+
+                <a class="btn btn-primary btn-small" href="@Url.Action("AdminIndex", "Categories")">
+                    Gerir Categorias
+                </a>
+            </div>
+
+    </section>
+
+
+
+    <form id="filtersForm" class="filters-bar">
+        <div class="search-box">
+            <span class="icon">🔍</span>
+            <input type="text" name="Search" value="@Model.Search" placeholder="Procurar produtos..." />
+        </div>
+
+        <div class="select-box">
+            <label>Categoria</label>
+            <select name="SelectedCategory">
+                <option value="">Todas</option>
+                @foreach (var c in Model.Categories ?? Enumerable.Empty<string>())
+                {
+                    <option value="@c" selected="@(c == Model.SelectedCategory)">@c</option>
+                }
+            </select>
+        </div>
+
+        <div class="select-box">
+            <label>Alergénios</label>
+            <select name="SelectedAllergen">
+                <option value="">Qualquer</option>
+                @foreach (var a in Model.Allergens ?? Enumerable.Empty<string>())
+                {
+                    <option value="@a" selected="@(a == Model.SelectedAllergen)">@a</option>
+                }
+            </select>
+        </div>
+
+        <div class="select-box">
+            <label>Preço</label>
+            <select name="PriceRange">
+                <option value="" selected="@(string.IsNullOrEmpty(Model.PriceRange))">Todos</option>
+                <option value="lt5" selected="@(Model.PriceRange == "lt5")">&lt; €5</option>
+                <option value="5to10" selected="@(Model.PriceRange == "5to10")">€5 – €10</option>
+                <option value="gt10" selected="@(Model.PriceRange == "gt10")">&gt; €10</option>
+            </select>
+        </div>
+
+        <button class="btn btn-primary btn-small" type="submit">Filtrar</button>
+        <button class="btn btn-ghost btn-small" type="button" id="clearFilters">Limpar</button>
+    </form>
+
+    <div id="productsList">
+        @await Html.PartialAsync("_ProductCard", Model.Items)
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const token = document.querySelector('meta[name="request-verification-token"]')?.content;
+
+        async function postCart(id) {
+            const res = await fetch('@Url.Action("Add", "Cart")', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': token ?? ''
+                },
+                body: JSON.stringify({ productId: id, quantity: 1 })
+            });
+            if (!res.ok) throw new Error('Erro ao adicionar ao carrinho');
+            const json = await res.json().catch(() => ({}));
+            const badge = document.querySelector('[data-cart-count]');
+            if (badge && json?.cartCount !== undefined) badge.textContent = json.cartCount;
+        }
+
+        function wireCartButtons(root=document) {
+            root.querySelectorAll('[data-add-cart]').forEach(btn => {
+                btn.onclick = async () => {
+                    const id = btn.getAttribute('data-product-id');
+                    try { await postCart(id); }
+                    catch (e) { console.error(e); alert('Não foi possível adicionar ao carrinho.'); }
+                };
+            });
+        }
+
+        function wireFavButtons(root=document) {
+            root.querySelectorAll("[data-fav-toggle]").forEach(btn => {
+                btn.onclick = async () => {
+                    const isActive = btn.classList.contains("active");
+                    btn.classList.toggle("active", !isActive);
+                    btn.textContent = !isActive ? "♥" : "♡";
+                    // TODO: POST/DELETE favorite endpoint
+                };
+            });
+        }
+
+        async function fetchProducts(queryString) {
+            const res = await fetch('@Url.Action("Filter", "Products")' + queryString, {
+                headers: { 'X-Requested-With': 'XMLHttpRequest' }
+            });
+            if (!res.ok) throw new Error('Erro ao filtrar');
+            const html = await res.text();
+            const container = document.getElementById('productsList');
+            container.innerHTML = html;
+            wireCartButtons(container);
+            wireFavButtons(container);
+        }
+
+        document.getElementById('filtersForm').addEventListener('submit', e => {
+            e.preventDefault();
+            const params = new URLSearchParams(new FormData(e.target)).toString();
+            fetchProducts('?' + params).catch(err => console.error(err));
+        });
+
+        document.getElementById('clearFilters').addEventListener('click', () => {
+            document.getElementById('filtersForm').reset();
+            fetchProducts('').catch(err => console.error(err));
+        });
+
+        wireCartButtons();
+        wireFavButtons();
+    </script>
+}

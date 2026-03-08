@@ -1,0 +1,66 @@
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.deps.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfoInputs.cache
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfo.cs
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.csproj.CoreCompileInputs.cache
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\refint\DTO_MVCAPIContracts.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\ref\DTO_MVCAPIContracts.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.deps.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfoInputs.cache
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfo.cs
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.csproj.CoreCompileInputs.cache
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\refint\DTO_MVCAPIContracts.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\ref\DTO_MVCAPIContracts.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.deps.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfoInputs.cache
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfo.cs
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.csproj.CoreCompileInputs.cache
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\refint\DTO_MVCAPIContracts.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\ref\DTO_MVCAPIContracts.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.deps.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfoInputs.cache
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfo.cs
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.csproj.CoreCompileInputs.cache
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\refint\DTO_MVCAPIContracts.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\ref\DTO_MVCAPIContracts.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.deps.json
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfoInputs.cache
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfo.cs
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.csproj.CoreCompileInputs.cache
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\refint\DTO_MVCAPIContracts.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\ref\DTO_MVCAPIContracts.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.deps.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\DTO_MVCAPIContracts\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfoInputs.cache
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.AssemblyInfo.cs
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.csproj.CoreCompileInputs.cache
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\refint\DTO_MVCAPIContracts.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\DTO_MVCAPIContracts\obj\Debug\net8.0\ref\DTO_MVCAPIContracts.dll

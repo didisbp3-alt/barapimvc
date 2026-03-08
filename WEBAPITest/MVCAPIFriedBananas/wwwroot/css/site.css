@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --brand: #e87600;
+    --brand-strong: #cf6800;
+    --accent: #ffb14e;
+    --muted: #6b7280;
+    --radius: 0.75rem; /* 12px */
+    --shadow: 0 0.375rem 1.25rem rgba(16,24,40,0.08); /* 6px 20px */
+}
+
+body[data-theme="light"] {
+    /* Background: soft lavender-white (easy on eyes) */
+    --bg: #f6f5fa;
+    /* Cards: slightly cleaner white so they float */
+    --card: #fcfcff;
+    /* Text */
+    --text: #1f2937;
+    --text-muted: #6b6f80;
+    /* Borders: lavender-gray instead of cold gray */
+    --border: rgba(80, 72, 120, 0.12);
+    /* Header gradient stays orange, but smoother */
+    --nav-bg: linear-gradient(90deg, #e87600, #ffb14e);
+    /* Buttons / contrast */
+    --btn-contrast: #1f2937;
+    --btn-contrast-border: rgba(80, 72, 120, 0.18);
+    --badge-accent-text: #1f2937;
+}
+
+
+body[data-theme="dark"] {
+    --bg: #0f141a;
+    --card: #161c24;
+    --text: #f5f7fb;
+    --text-muted: #b3bdca;
+    --border: rgba(255,255,255,0.08);
+    --nav-bg: linear-gradient(90deg, #e87600, #b85a00);
+    --btn-contrast: #f5f7fb;
+    --btn-contrast-border: rgba(255,255,255,0.16);
+    --badge-accent-text: #0f141a;
+}
+
+html, body {
+    height: 100%;
+    background: var(--bg);
+    font-family: 'Poppins', "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem; /* 16px base */
+}
+
+/* Remove underlines in header area */
+.topbar a,
+.nav-link,
+.dropdown-item,
+.nav-link:focus,
+.dropdown-item:focus,
+.btn-outline-contrast,
+.btn-ghost,
+.btn-primary {
+    text-decoration: none !important;
+}
+
+/* Header */
+/* Header bar: rounded corners, taller, keep gradient */
+.site-header {
+    background: var(--nav-bg);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    border-radius: 14px;
+    padding: 10px 12px; /* extra height */
+}
+
+    /* Make the inner topbar align inside the rounded shell */
+    .site-header .topbar {
+        padding: 6px 4px; /* slight inner padding */
+        border-radius: 12px;
+    }
+
+    .site-header .nav-link {
+        color: rgba(255,255,255,0.95);
+    }
+
+        .site-header .nav-link:hover {
+            color: #fff;
+        }
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem; /* 12px */
+    flex-wrap: wrap;
+}
+
+/* Keep right side in one line on desktop */
+.right-stack {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* 8px */
+    flex-wrap: nowrap;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.2rem;
+    letter-spacing: 0.01875rem; /* 0.3px */
+}
+
+.nav .nav-link {
+    color: rgba(255,255,255,0.95);
+    font-weight: 700;
+    padding: 0.35rem 0.6rem;
+    border-radius: 0.5rem; /* 8px */
+}
+
+    .nav .nav-link:hover {
+        color: #fff;
+        background: rgba(255,255,255,0.12);
+    }
+
+/* Buttons */
+.btn {
+    border-radius: 0.5rem; /* 8px */
+    font-weight: 700;
+    font-size: 0.875rem; /* 14px */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    transition: all 120ms ease;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-outline-contrast {
+    color: var(--btn-contrast);
+    border: 0.0625rem solid var(--btn-contrast-border); /* 1px */
+    background: transparent;
+}
+
+    .btn-outline-contrast:hover {
+        color: #fff;
+        background: var(--brand);
+        border-color: var(--brand);
+    }
+
+.btn-ghost {
+    background: transparent;
+    border: 0.0625rem solid var(--btn-contrast-border);
+    color: var(--btn-contrast);
+    text-align: center;
+    padding: 0.625rem 1.25rem;
+}
+
+    .btn-ghost:hover {
+        border-color: var(--brand);
+        color: var(--brand);
+    }
+
+.btn-primary {
+    background: var(--brand);
+    border: 0.0625rem solid var(--brand);
+    color: #fff;
+    box-shadow: var(--shadow);
+    text-align: center;
+    padding: 0.625rem 1.25rem;
+}
+
+    .btn-primary:hover {
+        background: var(--brand-strong);
+        border-color: var(--brand-strong);
+    }
+
+.btn.pill {
+    border-radius: 999px;
+    font-weight: 700;
+    padding: 8px 14px;
+    border: 1px solid transparent;
+}
+
+    .btn.pill.primary {
+        background: #f26b1d;
+        color: #fff;
+        border-color: #f26b1d;
+    }
+
+    .btn.pill.ghost {
+        background: transparent;
+        border: 1px solid #313743;
+        color: inherit;
+    }
+
+        .btn.pill.ghost:hover {
+            border-color: #f26b1d;
+            color: #f26b1d;
+        }
+
+/* Make login/register buttons match product page buttons */
+.user-menu.guest .btn,
+.user-menu.guest .btn-outline-contrast,
+.user-menu.guest .btn-ghost,
+.user-menu.guest .btn-primary {
+    border-radius: 0.625rem; /* 10px */
+    font-size: 0.875rem; /* 14px */
+    padding: 0.625rem 1.25rem;
+    font-weight: 700;
+    min-width: 7rem;
+    max-width: 12rem;
+    width: auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+}
+
+.user-menu.guest .btn-ghost,
+.user-menu.guest .btn-outline-contrast {
+    border: 0.0625rem solid var(--btn-contrast-border);
+    color: var(--btn-contrast);
+    background: transparent;
+}
+
+.user-menu.guest .btn-primary {
+    background: var(--brand);
+    border: 0.0625rem solid var(--brand);
+    color: #fff;
+}
+
+    .user-menu.guest .btn-primary:hover {
+        background: var(--brand-strong);
+        border-color: var(--brand-strong);
+    }
+
+/* Theme toggle */
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.35rem 0.6rem;
+}
+
+.theme-icon {
+    display: none;
+    line-height: 1;
+}
+
+body[data-theme="light"] .theme-icon[data-light],
+body[data-theme="dark"] .theme-icon[data-dark] {
+    display: inline;
+}
+
+/* Cart pill (no bright highlight) */
+/* Cart pill: remove hover-like default */
+.cart-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #111827; /* normal state */
+    border: 1px solid #111827;
+    color: #fff;
+    box-shadow: var(--shadow);
+    border-radius: 999px;
+    padding: 8px 14px;
+    text-decoration: none;
+}
+
+    .cart-link:hover {
+        background: #f26b1d; /* true hover state */
+        border-color: #f26b1d;
+        color: #fff;
+    }
+
+.cart-count {
+    background: #fff;
+    color: #f26b1d;
+    min-width: 18px;
+    padding: 2px 6px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Containers & cards */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.site-header .container,
+main.container {
+    max-width: 1400px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.card {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 0.0625rem solid var(--border);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+/* Product / Menu grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr)); /* 300px */
+    gap: 1rem;
+}
+
+/* Product card */
+.product-card {
+    display: grid;
+    grid-template-columns: 6.875rem 1fr; /* 110px */
+    gap: 1rem;
+    align-items: center;
+}
+
+    .product-card img {
+        width: 6.875rem; /* 110px */
+        height: 6.875rem;
+        object-fit: cover;
+        border-radius: 0.5rem; /* 8px */
+    }
+
+/* Text */
+.product-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    color: var(--text);
+}
+
+.product-desc {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 0.625rem; /* 10px */
+}
+
+/* Footer */
+.site-footer {
+    width: 100%;
+}
+
+/* User menu horizontal + inline pills */
+.user-menu.user-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.user-menu.inline-pills {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-menu .user-pill-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.user-menu .btn.pill.ghost {
+    border: 1px solid rgba(255,255,255,0.16);
+    color: #fff;
+}
+
+    .user-menu .btn.pill.ghost:hover {
+        border-color: #f26b1d;
+        color: #f26b1d;
+    }
+
+.user-menu {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* User info */
+.user-info {
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: #fff;
+}
+
+.user-email {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.78rem;
+}
+
+/* User dropdown (legacy) */
+.user-dropdown {
+    min-width: 220px;
+}
+
+    .user-dropdown .dropdown-item:hover {
+        background: rgba(242,107,29,0.12);
+        color: #f26b1d;
+    }
+
+.logout-link {
+    color: #d9534f;
+}
+
+/* Avatar */
+.avatar {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(135deg, var(--brand), var(--accent));
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.15);
+}
+
+/* Logout styled like nav */
+.logout-link {
+    font-weight: 700;
+    color: var(--btn-contrast);
+}
+
+    .logout-link:hover {
+        color: #fff;
+        background: var(--brand);
+    }
+
+/* Guest buttons inline */
+.user-menu.guest {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+/* Responsive */
+@media (max-width: 48rem) { /* 768px */
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-brand {
+        font-size: 1.05rem;
+    }
+
+    .right-stack {
+        flex-wrap: wrap;
+    }
+}

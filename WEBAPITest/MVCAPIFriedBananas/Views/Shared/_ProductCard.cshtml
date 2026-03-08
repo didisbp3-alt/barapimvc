@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MVCAPIFriedBananas.Views.ViewModels.ProductsViewModel>
+@{
+    string catName(object? catId, string? name) => !string.IsNullOrWhiteSpace(name) ? name : $"Categoria {catId}";
+}
+
+<div class="cards">
+    @foreach (var p in Model)
+    {
+        var isFav = p.IsFavorite == true;
+        <div class="card product-card">
+            <div class="product-image">
+                <img src="@(string.IsNullOrWhiteSpace(p.ImageUrl) ? "https://via.placeholder.com/400x260?text=Produto" : p.ImageUrl)" alt="@p.Name" />
+                <button class="fav-btn @(isFav ? "active" : "")"
+                        type="button"
+                        data-product-id="@p.ProdId"
+                        data-fav-toggle>
+                    @(isFav ? "♥" : "♡")
+                </button>
+                @if (p.DiscountPercent.HasValue)
+                {
+                    <div class="discount-pill">@($"-{p.DiscountPercent}%")</div>
+                }
+            </div>
+            <div class="product-body">
+                <div class="meta">
+                    <strong class="accent">@p.CategoryName</strong>
+                    <span class="price">
+                        @p.Price.ToString("C")
+                        @if (p.OriginalPrice.HasValue && p.OriginalPrice.Value > p.Price)
+                        {
+                            <span class="price-old">@p.OriginalPrice.Value.ToString("C")</span>
+                        }
+                    </span>
+                </div>
+                <h3>@p.Name</h3>
+                <p class="muted">@p.Description</p>
+                <div class="tags">
+                    @if (p.StockCurrent.HasValue && p.StockMax.HasValue)
+                    {
+                        <span class="tag">Stock @p.StockCurrent/@p.StockMax</span>
+                    }
+                </div>
+                <div class="row gap-1" style="flex-direction:column;">
+                    <button type="button"
+                            class="btn btn-primary w-100"
+                            data-add-cart
+                            data-product-id="@p.ProdId">
+                        Adicionar
+                    </button>
+                    <a class="btn btn-ghost w-100" href="@Url.Action("Details", "Products", new { id = p.ProdId })">Detalhes</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

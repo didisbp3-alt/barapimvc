@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DTO_MVCAPIContracts/1.0.0": {
+        "runtime": {
+          "DTO_MVCAPIContracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DTO_MVCAPIContracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

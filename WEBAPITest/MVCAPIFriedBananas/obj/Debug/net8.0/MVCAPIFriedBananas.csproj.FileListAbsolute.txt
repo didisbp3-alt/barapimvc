@@ -1,0 +1,305 @@
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.runtime.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.endpoints.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.exe
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.deps.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.runtimeconfig.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfoInputs.cache
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfo.cs
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.CoreCompileInputs.cache
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cache
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cs
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\bundle\MVCAPIFriedBananas.styles.css
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\projectbundle\MVCAPIFriedBananas.bundle.scp.css
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\refint\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.genruntimeconfig.cache
+C:\Users\i230078\Downloads\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\ref\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.runtime.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.endpoints.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.exe
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.deps.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.runtimeconfig.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfoInputs.cache
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfo.cs
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.CoreCompileInputs.cache
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cache
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cs
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\bundle\MVCAPIFriedBananas.styles.css
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\projectbundle\MVCAPIFriedBananas.bundle.scp.css
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\refint\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.genruntimeconfig.cache
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\ref\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.AssemblyReference.cache
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFr.32275F20.Up2Date
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\i230078\Downloads\WEBAPITest\WEBAPITest (2)\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.runtime.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.endpoints.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.exe
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.deps.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.runtimeconfig.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.AssemblyReference.cache
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfoInputs.cache
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfo.cs
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.CoreCompileInputs.cache
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cache
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cs
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\bundle\MVCAPIFriedBananas.styles.css
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\projectbundle\MVCAPIFriedBananas.bundle.scp.css
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFr.32275F20.Up2Date
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\refint\MVCAPIFriedBananas.dll
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.genruntimeconfig.cache
+C:\Users\nmbba\Downloads\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\ref\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.AssemblyReference.cache
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfoInputs.cache
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfo.cs
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.CoreCompileInputs.cache
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cache
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cs
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\refint\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.runtime.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.endpoints.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.exe
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.deps.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.runtimeconfig.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\bundle\MVCAPIFriedBananas.styles.css
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\projectbundle\MVCAPIFriedBananas.bundle.scp.css
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFr.32275F20.Up2Date
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.genruntimeconfig.cache
+C:\Users\i230078\Downloads\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\ref\MVCAPIFriedBananas.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.AssemblyReference.cache
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfoInputs.cache
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfo.cs
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.CoreCompileInputs.cache
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cache
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cs
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\refint\MVCAPIFriedBananas.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.runtime.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.endpoints.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.exe
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.deps.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.runtimeconfig.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\bundle\MVCAPIFriedBananas.styles.css
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\projectbundle\MVCAPIFriedBananas.bundle.scp.css
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFr.32275F20.Up2Date
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.genruntimeconfig.cache
+C:\Users\I230102\Downloads\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\ref\MVCAPIFriedBananas.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.json
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.runtime.json
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.endpoints.json
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.exe
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.deps.json
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.runtimeconfig.json
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.AssemblyReference.cache
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfoInputs.cache
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfo.cs
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.CoreCompileInputs.cache
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cache
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cs
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\bundle\MVCAPIFriedBananas.styles.css
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\projectbundle\MVCAPIFriedBananas.bundle.scp.css
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets\msbuild.MVCAPIFriedBananas.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets\msbuild.MVCAPIFriedBananas.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets\msbuild.build.MVCAPIFriedBananas.props
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MVCAPIFriedBananas.props
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MVCAPIFriedBananas.props
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFr.32275F20.Up2Date
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\refint\MVCAPIFriedBananas.dll
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.genruntimeconfig.cache
+C:\Users\Diogo\Downloads\WEBAPITest_VerDia20\WEBAPITest_CasaVer2\WEBAPITest_CasaVer2\WEBAPITest\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\ref\MVCAPIFriedBananas.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.AssemblyReference.cache
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfoInputs.cache
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.AssemblyInfo.cs
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.csproj.CoreCompileInputs.cache
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cache
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.RazorAssemblyInfo.cs
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\refint\MVCAPIFriedBananas.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\appsettings.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.runtime.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.staticwebassets.endpoints.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.exe
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.deps.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.runtimeconfig.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\MVCAPIFriedBananas.pdb
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.dll
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\bin\Debug\net8.0\DTO_MVCAPIContracts.pdb
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\bundle\MVCAPIFriedBananas.styles.css
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\scopedcss\projectbundle\MVCAPIFriedBananas.bundle.scp.css
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFr.32275F20.Up2Date
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\MVCAPIFriedBananas.genruntimeconfig.cache
+C:\Users\I230102\Downloads\WEBAPITest_Dia21Casa\WEBAPITest\MVCAPIFriedBananas\obj\Debug\net8.0\ref\MVCAPIFriedBananas.dll

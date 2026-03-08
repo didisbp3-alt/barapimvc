@@ -1,0 +1,81 @@
+﻿@model MVCAPIFriedBananas.ViewModels.WeeklyMenuViewModel
+@{
+    ViewData["Title"] = "Menu Semanal";
+    var weekStartValue = Model.WeekStart.ToString("yyyy-MM-dd");
+}
+
+<h1>Menu Semanal (Semana de @Model.WeekStart.ToString("dd MMM yyyy"))</h1>
+
+@if (TempData["BookingMessage"] != null)
+{
+    var ok = TempData["BookingSuccess"] as bool? ?? false;
+    <div class="alert @(ok ? "alert-success" : "alert-danger")">
+        @TempData["BookingMessage"]
+    </div>
+}
+
+<form method="get" class="mb-3">
+    <label for="weekStart" class="form-label">Escolha o dia (segunda da semana)</label>
+    <input type="date" id="weekStart" name="weekStart" class="form-control" value="@weekStartValue" onchange="this.form.submit()" />
+</form>
+
+<div class="products-grid">
+    @foreach (var day in Model.Days)
+    {
+        <div class="card">
+            <div class="card-body">
+                <h4>@day.Date.ToString("dddd, dd MMM")</h4>
+
+                <div style="display:flex; gap:0.5rem; margin-top:0.5rem;">
+                    <div style="flex:1">
+                        <h5>Normal</h5>
+                        @if (day.Normal != null)
+                        {
+                            <p class="product-desc">@day.Normal.MainDish</p>
+                            <p class="product-desc"><small>Sopa: @day.Normal.Soup; Sobremesa: @day.Normal.Dessert</small></p>
+                            @if (!string.IsNullOrWhiteSpace(day.Normal.Notes))
+                            {
+                                <p class="product-desc"><small>@day.Normal.Notes</small></p>
+                            }
+                            <p><strong>Vagas:</strong> @day.Normal.AvailableSeats</p>
+                            <form method="post" asp-controller="Booking" asp-action="Book" class="m-0">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="menuId" value="@day.Normal.MId" />
+                                <input type="hidden" name="weekStart" value="@weekStartValue" />
+                                <button type="submit" class="btn btn-primary">Marcar</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <p class="product-desc text-muted">Sem menu</p>
+                        }
+                    </div>
+
+                    <div style="flex:1">
+                        <h5>Vegetariano</h5>
+                        @if (day.Vegetarian != null)
+                        {
+                            <p class="product-desc">@day.Vegetarian.MainDish</p>
+                            <p class="product-desc"><small>Sopa: @day.Vegetarian.Soup; Sobremesa: @day.Vegetarian.Dessert</small></p>
+                            @if (!string.IsNullOrWhiteSpace(day.Vegetarian.Notes))
+                            {
+                                <p class="product-desc"><small>@day.Vegetarian.Notes</small></p>
+                            }
+                            <p><strong>Vagas:</strong> @day.Vegetarian.AvailableSeats</p>
+                            <form method="post" asp-controller="Booking" asp-action="Book" class="m-0">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="menuId" value="@day.Vegetarian.MId" />
+                                <input type="hidden" name="weekStart" value="@weekStartValue" />
+                                <button type="submit" class="btn btn-primary">Marcar</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <p class="product-desc text-muted">Sem menu</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

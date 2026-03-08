@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MVCAPIFriedBananas.Views.ViewModels.MenuItemViewModel>
+@{
+    ViewData["Title"] = "Menus (Admin)";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/products.css" />
+}
+
+<div class="products-page">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="mb-0">Menus (Admin)</h2>
+        <a class="btn btn-primary btn-small" asp-action="Create">Novo Menu</a>
+    </div>
+
+    <div class="cards">
+        @foreach (var m in Model)
+        {
+            <div class="card product-card">
+                <div class="product-body">
+                    <div class="meta">
+                        <strong class="accent">@m.MainDish</strong>
+                        <span class="muted">ID: @m.MId</span>
+                    </div>
+                    <div class="muted mb-2">Data: @m.Date.ToShortDateString()</div>
+                    <div class="tags">
+                        <span class="tag">Sopa: @m.Soup</span>
+                        <span class="tag">Sobremesa: @m.Dessert</span>
+                        <span class="tag">Lugares: @m.AvailableSeats/@m.MaxSeats</span>
+                    </div>
+                    <div class="row gap-1" style="flex-direction:row;">
+                        <a class="btn btn-warning btn-small" asp-action="Edit" asp-route-id="@m.MId">Editar</a>
+                        <a class="btn btn-danger btn-small" asp-action="Delete" asp-route-id="@m.MId">Eliminar</a>
+                        <a class="btn btn-info btn-small text-white" asp-action="Details" asp-route-id="@m.MId">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
