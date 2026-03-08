@@ -67,7 +67,7 @@ public class AuthController : ControllerBase
             FullName = model.FullName,
             Email = model.Email,
             Password = model.Password,  // TODO: Hash a senha em prod!
-            Role = 0,  // Default: Aluno
+            Role = 2,  // Default: Aluno/Student (0=Admin, 1=Bar, 2=Student)
             Balance = 0m  // Saldo inicial 0
         };
 

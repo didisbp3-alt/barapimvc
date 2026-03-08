@@ -81,11 +81,15 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-// Política que permite apenas roles "1" (Funcionário/Bar) e "2" (Administrador)
+// Políticas de autorização por nível de papel
 builder.Services.AddAuthorization(options =>
 {
+    // Apenas Administradores (0)
+    options.AddPolicy("AdminOnly", policy =>
+        policy.RequireClaim(ClaimTypes.Role, "0"));
+    // Bar/Cantina (1) OU Administrador (0)
     options.AddPolicy("BarOrAdmin", policy =>
-        policy.RequireClaim(ClaimTypes.Role, "1", "2"));
+        policy.RequireClaim(ClaimTypes.Role, "0", "1"));
 });
 
 // Registo dos serviços de domínio

@@ -1,7 +1,8 @@
-﻿using DTO_MVCAPIContracts.Contracts;
+using DTO_MVCAPIContracts.Contracts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using WEBAPITest.Data;          // ApplicationDbContext
+using WEBAPITest.Data;
 using WEBAPITest.Models;
 
 namespace YourApp.Api.Controllers
@@ -68,6 +69,7 @@ namespace YourApp.Api.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = "BarOrAdmin")]
         public async Task<ActionResult<ProductsDto>> Create(ProductsDto dto)
         {
             var entity = FromDto(dto);
@@ -77,6 +79,7 @@ namespace YourApp.Api.Controllers
         }
 
         [HttpPut("{id:int}")]
+        [Authorize(Policy = "BarOrAdmin")]
         public async Task<IActionResult> Update(int id, ProductsDto dto)
         {
             if (id != dto.ProdId) return BadRequest("ID mismatch.");
@@ -90,6 +93,7 @@ namespace YourApp.Api.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize(Policy = "BarOrAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
             var entity = await _db.Products.FindAsync(id);

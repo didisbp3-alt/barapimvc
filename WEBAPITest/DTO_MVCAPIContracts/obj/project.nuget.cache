@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "mVDQfJX1zzE=",
+  "dgSpecHash": "f7WGOcPIJu0=",
   "success": true,
   "projectFilePath": "/home/runner/work/barapimvc/barapimvc/WEBAPITest/DTO_MVCAPIContracts/DTO_MVCAPIContracts.csproj",
   "expectedPackageFiles": [
-    "/home/runner/.nuget/packages/microsoft.netcore.app.ref/8.0.23/microsoft.netcore.app.ref.8.0.23.nupkg.sha512",
-    "/home/runner/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.23/microsoft.aspnetcore.app.ref.8.0.23.nupkg.sha512"
+    "/tmp/codeql-scratch-cc9920b0c721832c/dbs/csharp/working/packages/microsoft.netcore.app.ref/8.0.23/microsoft.netcore.app.ref.8.0.23.nupkg.sha512",
+    "/tmp/codeql-scratch-cc9920b0c721832c/dbs/csharp/working/packages/microsoft.aspnetcore.app.ref/8.0.23/microsoft.aspnetcore.app.ref.8.0.23.nupkg.sha512"
   ],
   "logs": []
 }

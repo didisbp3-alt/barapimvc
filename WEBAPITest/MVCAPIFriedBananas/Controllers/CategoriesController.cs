@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVCAPIFriedBananas.Services;
 using MVCAPIFriedBananas.Models;
 
@@ -27,12 +28,14 @@ namespace MVCAPIFriedBananas.Controllers
             return View(categories);
         }
         // GET: /Categories/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
         }
         // POST: /Categories/Create
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Category model)
         {
@@ -47,6 +50,7 @@ namespace MVCAPIFriedBananas.Controllers
             return RedirectToAction(nameof(Index));
         }
         // GET: /Categories/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int id)
         {
             var category = await _apiClient.GetCategoryAsync(id);
@@ -56,6 +60,7 @@ namespace MVCAPIFriedBananas.Controllers
         }
         // POST: /Categories/Delete/5
         [HttpPost, ActionName("Delete")]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
@@ -67,7 +72,8 @@ namespace MVCAPIFriedBananas.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
-        // GET: /Categories/Edit/5 (Edit clássico via MVC)
+        // GET: /Categories/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int id)
         {
             var category = await _apiClient.GetCategoryAsync(id);
@@ -75,8 +81,9 @@ namespace MVCAPIFriedBananas.Controllers
                 return NotFound();
             return View(category);
         }
-        // POST: /Categories/Edit/5 (Edit clássico via MVC)
+        // POST: /Categories/Edit/5
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Category model)
         {

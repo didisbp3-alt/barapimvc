@@ -1,0 +1,389 @@
+@model MVCAPIFriedBananas.Views.ViewModels.OrderViewModel
+@using System.Globalization
+@{
+    ViewData["Title"] = "Carrinho";
+    var culture = CultureInfo.GetCultureInfo("pt-PT");
+}
+
+@section Styles {
+<style>
+/* ===== CART PAGE ===== */
+.cart-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 3rem;
+}
+
+.cart-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border, rgba(232,118,0,0.15));
+}
+
+.cart-header h1 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--text, #1a1a2e);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-count-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e87600, #ffb14e);
+    color: #fff;
+    border-radius: 999px;
+    min-width: 1.75rem;
+    height: 1.75rem;
+    padding: 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.cart-empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--card, #fff);
+    border-radius: 1.25rem;
+    border: 1px solid var(--border, rgba(232,118,0,0.15));
+}
+
+.cart-empty-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+}
+
+.cart-empty h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text, #1a1a2e);
+    margin-bottom: 0.5rem;
+}
+
+.cart-empty p {
+    color: var(--text-muted, #6b7280);
+    margin-bottom: 1.5rem;
+}
+
+/* Cart table card */
+.cart-table-card {
+    background: var(--card, #fff);
+    border: 1px solid var(--border, rgba(232,118,0,0.15));
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    margin-bottom: 1.5rem;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table thead tr {
+    background: linear-gradient(135deg, rgba(232,118,0,0.08), rgba(255,177,78,0.05));
+}
+
+.cart-table th {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted, #6b7280);
+    border-bottom: 1px solid var(--border, rgba(232,118,0,0.15));
+}
+
+.cart-table td {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border, rgba(232,118,0,0.15));
+    vertical-align: middle;
+}
+
+.cart-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.cart-table tbody tr:hover {
+    background: rgba(232,118,0,0.03);
+}
+
+.cart-item-name {
+    font-weight: 600;
+    color: var(--text, #1a1a2e);
+    font-size: 0.95rem;
+}
+
+.cart-item-price {
+    font-weight: 600;
+    color: #e87600;
+    font-size: 0.95rem;
+}
+
+.cart-item-total {
+    font-weight: 700;
+    color: var(--text, #1a1a2e);
+    font-size: 0.95rem;
+}
+
+/* Quantity form */
+.qty-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.qty-input {
+    width: 4.5rem;
+    height: 2.25rem;
+    padding: 0 0.5rem;
+    border: 1.5px solid var(--border, rgba(232,118,0,0.20));
+    border-radius: 0.625rem;
+    background: var(--card, #fff);
+    color: var(--text, #1a1a2e);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+    transition: border-color 180ms ease;
+}
+
+.qty-input:focus {
+    outline: none;
+    border-color: #e87600;
+    box-shadow: 0 0 0 3px rgba(232,118,0,0.12);
+}
+
+.btn-update {
+    height: 2.25rem;
+    padding: 0 0.875rem;
+    border: 1.5px solid rgba(232,118,0,0.35);
+    border-radius: 0.625rem;
+    background: transparent;
+    color: #e87600;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 180ms ease;
+    white-space: nowrap;
+}
+
+.btn-update:hover {
+    background: rgba(232,118,0,0.08);
+    border-color: #e87600;
+}
+
+.btn-remove {
+    height: 2.25rem;
+    padding: 0 0.75rem;
+    border: 1.5px solid rgba(220, 53, 69, 0.25);
+    border-radius: 0.625rem;
+    background: transparent;
+    color: #dc3545;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 180ms ease;
+    white-space: nowrap;
+}
+
+.btn-remove:hover {
+    background: rgba(220, 53, 69, 0.08);
+    border-color: #dc3545;
+}
+
+/* Summary */
+.cart-summary {
+    background: var(--card, #fff);
+    border: 1px solid var(--border, rgba(232,118,0,0.15));
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+.cart-summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.cart-summary-row.subtotal {
+    color: var(--text-muted, #6b7280);
+    border-bottom: 1px solid var(--border, rgba(232,118,0,0.15));
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.cart-summary-row.total {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text, #1a1a2e);
+    padding-top: 0.75rem;
+}
+
+.cart-total-amount {
+    color: #e87600;
+}
+
+.btn-checkout {
+    width: 100%;
+    height: 3rem;
+    background: linear-gradient(135deg, #e87600, #ffb14e);
+    color: #fff;
+    border: none;
+    border-radius: 0.875rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    transition: all 180ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 14px rgba(232,118,0,0.35);
+}
+
+.btn-checkout:not(:disabled):hover {
+    box-shadow: 0 6px 20px rgba(232,118,0,0.50);
+    transform: translateY(-1px);
+}
+
+.btn-checkout:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.btn-continue {
+    width: 100%;
+    height: 2.75rem;
+    background: transparent;
+    border: 1.5px solid var(--border, rgba(232,118,0,0.20));
+    border-radius: 0.875rem;
+    color: var(--text, #1a1a2e);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.75rem;
+    transition: all 180ms ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-continue:hover {
+    border-color: #e87600;
+    color: #e87600;
+    background: rgba(232,118,0,0.04);
+}
+
+@@media (max-width: 600px) {
+    .cart-table th:nth-child(2),
+    .cart-table td:nth-child(2) {
+        display: none;
+    }
+}
+</style>
+}
+
+<div class="cart-page">
+    <div class="cart-header">
+        <h1>
+            🛒 Carrinho
+            @if (Model?.Items != null && Model.Items.Any())
+            {
+                <span class="cart-count-badge">@Model.ItemCount</span>
+            }
+        </h1>
+    </div>
+
+    @if (Model?.Items == null || !Model.Items.Any())
+    {
+        <div class="cart-empty">
+            <div class="cart-empty-icon">🛒</div>
+            <h3>O carrinho está vazio</h3>
+            <p>Ainda não adicionaste nada ao carrinho. Descobre os nossos produtos!</p>
+            <a href="@Url.Action("Index", "Products")" class="btn-checkout" style="display:inline-flex;width:auto;padding:0 2rem;text-decoration:none;">
+                🍽️ Ver Produtos
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="cart-table-card">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço unit.</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Items)
+                    {
+                        <tr>
+                            <td>
+                                <span class="cart-item-name">@item.Name</span>
+                            </td>
+                            <td>
+                                <span class="cart-item-price">@item.UnitPrice.ToString("C2", culture)</span>
+                            </td>
+                            <td>
+                                <form asp-action="Update" asp-controller="Cart" method="post" class="qty-form">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@item.ProductId" />
+                                    <input type="number" name="qty" value="@item.Quantity" min="0" class="qty-input" />
+                                    <button type="submit" class="btn-update">Atualizar</button>
+                                </form>
+                            </td>
+                            <td>
+                                <span class="cart-item-total">@item.LineTotal.ToString("C2", culture)</span>
+                            </td>
+                            <td>
+                                <form asp-action="Remove" asp-controller="Cart" method="post" class="m-0">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@item.ProductId" />
+                                    <button type="submit" class="btn-remove">🗑️ Remover</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div style="display:flex;justify-content:flex-end;">
+            <div class="cart-summary" style="min-width:320px;max-width:400px;width:100%;">
+                <div class="cart-summary-row subtotal">
+                    <span>Subtotal</span>
+                    <span>@Model.Subtotal.ToString("C2", culture)</span>
+                </div>
+                <div class="cart-summary-row total">
+                    <span>Total</span>
+                    <span class="cart-total-amount">@Model.Total.ToString("C2", culture)</span>
+                </div>
+                <button class="btn-checkout" type="button" disabled>
+                    💳 Checkout (em breve)
+                </button>
+                <a href="@Url.Action("Index", "Products")" class="btn-continue">
+                    ← Continuar a comprar
+                </a>
+            </div>
+        </div>
+    }
+</div>

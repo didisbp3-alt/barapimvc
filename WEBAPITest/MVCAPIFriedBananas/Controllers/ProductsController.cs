@@ -62,6 +62,7 @@ namespace MVCAPIFriedBananas.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> AdminIndex([FromQuery] ProductsPageViewModel query)
         {
             // Get all products (not just FOOD)
@@ -209,8 +210,8 @@ namespace MVCAPIFriedBananas.Controllers
         }
 
         // GET: Products/Create
-        //[Authorize(Roles = "Admin")]
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Create()
         {
             // Optionally, pass categories for dropdown
@@ -220,8 +221,8 @@ namespace MVCAPIFriedBananas.Controllers
         }
 
         // POST: Products/Create
-        //[Authorize(Roles = "Admin")]
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProductsViewModel model)
         {
@@ -258,8 +259,8 @@ namespace MVCAPIFriedBananas.Controllers
         }
 
         // GET: Products/Edit/{id}
-        //[Authorize(Roles = "Admin")]
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Edit(int id)
         {
             var product = await _products.GetProductAsync(id);
@@ -273,8 +274,8 @@ namespace MVCAPIFriedBananas.Controllers
         }
 
         // POST: Products/Edit/{id}
-        //[Authorize(Roles = "Admin")]
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, ProductsViewModel model)
         {
@@ -313,8 +314,8 @@ namespace MVCAPIFriedBananas.Controllers
         }
 
         // GET: Products/Delete/{id}
-        //[Authorize(Roles = "Admin")]
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Delete(int id)
         {
             var product = await _products.GetProductAsync(id);
@@ -326,8 +327,8 @@ namespace MVCAPIFriedBananas.Controllers
         }
 
         // POST: Products/Delete/{id}
-        //[Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {

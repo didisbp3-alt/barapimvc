@@ -10,7 +10,7 @@
         "projectUniqueName": "/home/runner/work/barapimvc/barapimvc/WEBAPITest/DTO_MVCAPIContracts/DTO_MVCAPIContracts.csproj",
         "projectName": "DTO_MVCAPIContracts",
         "projectPath": "/home/runner/work/barapimvc/barapimvc/WEBAPITest/DTO_MVCAPIContracts/DTO_MVCAPIContracts.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
+        "packagesPath": "/tmp/codeql-scratch-cc9920b0c721832c/dbs/csharp/working/packages",
         "outputPath": "/home/runner/work/barapimvc/barapimvc/WEBAPITest/DTO_MVCAPIContracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [

@@ -72,6 +72,19 @@ builder.Services.AddAuthentication(options =>
             if (!string.IsNullOrEmpty(token))
                 ctx.Token = token;
             return Task.CompletedTask;
+        },
+        // Redirect to login page instead of returning 401 for browser page requests
+        OnChallenge = ctx =>
+        {
+            var isAjax = ctx.Request.Headers["X-Requested-With"] == "XMLHttpRequest" ||
+                         (ctx.Request.Headers["Accept"].ToString().Contains("application/json"));
+            if (!isAjax && !ctx.Response.HasStarted)
+            {
+                ctx.HandleResponse();
+                var returnUrl = Uri.EscapeDataString(ctx.Request.Path + ctx.Request.QueryString);
+                ctx.Response.Redirect($"/Auth/Login?returnUrl={returnUrl}");
+            }
+            return Task.CompletedTask;
         }
     };
 });

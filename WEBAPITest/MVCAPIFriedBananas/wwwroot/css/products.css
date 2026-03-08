@@ -108,9 +108,60 @@ body[data-theme="dark"] {
 .hero-card {
     display: grid;
     grid-template-columns: 1fr;
+    align-self: stretch;
+    min-width: 0; /* prevent overflow */
 }
 
-/* FILTERS BAR */
+/* Highlight card in hero (first product) */
+.highlight-card {
+    height: 100%;
+    min-height: 0;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.highlight-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.highlight-card .muted {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
+    min-height: 0;
+}
+
+/* Admin toolbar */
+.admin-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, rgba(232,118,0,0.06), rgba(255,177,78,0.04));
+    border: 1px solid rgba(232,118,0,0.20);
+    border-radius: 0.875rem;
+}
+
+.admin-toolbar-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #e87600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+}
+
+
 .filters-bar {
     margin-bottom: 1.5rem;
     background: var(--p-panel);
