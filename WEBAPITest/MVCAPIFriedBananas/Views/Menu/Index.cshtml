@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Menu Semanal";
     var weekStartValue = Model.WeekStart.ToString("yyyy-MM-dd");
+    var weekEndDate = Model.WeekStart.AddDays(4); // Mon to Fri
 }
 
 @section Styles {
@@ -12,255 +13,133 @@
     margin: 0 auto;
     padding: 0 0 3rem;
 }
+.menu-page-header { margin-bottom: 1.5rem; }
+.menu-page-header h1 { font-size: 1.75rem; font-weight: 800; color: var(--text,#1a1a2e); margin-bottom: 0.25rem; }
+.menu-page-header p { color: var(--text-muted,#6b7280); margin-bottom: 1rem; }
 
-.menu-page-header {
-    margin-bottom: 1.5rem;
-}
-
-.menu-page-header h1 {
-    font-size: 1.75rem;
-    font-weight: 800;
-    color: var(--text, #1a1a2e);
-    margin-bottom: 0.25rem;
-}
-
-.menu-page-header p {
-    color: var(--text-muted, #6b7280);
-    margin-bottom: 1rem;
-}
-
-.week-picker {
+.week-nav {
     display: flex;
     align-items: center;
     gap: 0.75rem;
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
     padding: 0.875rem 1rem;
-    background: var(--card, #fff);
-    border: 1px solid var(--border, rgba(232,118,0,0.15));
+    background: var(--card,#fff);
+    border: 1px solid var(--border,rgba(232,118,0,0.15));
     border-radius: 0.875rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-
-.week-picker label {
-    font-weight: 600;
-    color: var(--text, #1a1a2e);
-    font-size: 0.9rem;
-    white-space: nowrap;
+.week-nav-title { font-weight: 700; color: var(--text,#1a1a2e); font-size: 0.95rem; flex: 1; }
+.btn-week {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    height: 2.25rem; padding: 0 0.875rem;
+    border: 1.5px solid rgba(232,118,0,0.25); border-radius: 0.625rem;
+    background: transparent; color: #e87600; font-size: 0.85rem; font-weight: 700;
+    cursor: pointer; text-decoration: none; transition: all 180ms ease;
 }
+.btn-week:hover { background: rgba(232,118,0,0.08); border-color: #e87600; }
 
-.week-picker input[type="date"] {
-    height: 2.25rem;
-    padding: 0 0.875rem;
-    border: 1.5px solid var(--border, rgba(232,118,0,0.20));
-    border-radius: 0.625rem;
-    background: var(--card, #fff);
-    color: var(--text, #1a1a2e);
-    font-size: 0.875rem;
-    cursor: pointer;
-    transition: border-color 180ms ease;
-}
-
-.week-picker input[type="date"]:focus {
-    outline: none;
-    border-color: #e87600;
-}
-
-/* Days grid */
 .menu-days-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.25rem;
 }
-
-/* Day card */
 .menu-day-card {
-    background: var(--card, #fff);
-    border: 1px solid var(--border, rgba(232,118,0,0.15));
-    border-radius: 1.25rem;
-    overflow: hidden;
+    background: var(--card,#fff);
+    border: 1px solid var(--border,rgba(232,118,0,0.15));
+    border-radius: 1.25rem; overflow: hidden;
     box-shadow: 0 4px 16px rgba(0,0,0,0.07);
     transition: transform 200ms ease, box-shadow 200ms ease;
 }
-
-.menu-day-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-}
+.menu-day-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+.menu-day-card.already-booked { border-color: rgba(34,197,94,0.35); }
 
 .menu-day-header {
     background: linear-gradient(135deg, #e87600, #ffb14e);
     padding: 0.875rem 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; align-items: center; justify-content: space-between;
+}
+.menu-day-card.already-booked .menu-day-header {
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+.menu-day-name { font-size: 0.95rem; font-weight: 800; color: #fff; text-transform: capitalize; }
+.menu-day-date { font-size: 0.8rem; color: rgba(255,255,255,0.88); }
+.booked-badge {
+    font-size: 0.72rem; font-weight: 700; padding: 0.2rem 0.6rem;
+    background: rgba(255,255,255,0.25); border-radius: 999px; color: #fff;
 }
 
-.menu-day-name {
-    font-size: 0.95rem;
-    font-weight: 800;
-    color: #fff;
-    text-transform: capitalize;
-}
-
-.menu-day-date {
-    font-size: 0.8rem;
-    color: rgba(255,255,255,0.88);
-}
-
-.menu-day-body {
-    padding: 0;
-}
-
-/* Menu type panels */
-.menu-type-panel {
-    padding: 1rem 1.25rem;
-    border-bottom: 1px solid var(--border, rgba(232,118,0,0.12));
-}
-
-.menu-type-panel:last-child {
-    border-bottom: none;
-}
-
+.menu-type-panel { padding: 1rem 1.25rem; border-bottom: 1px solid var(--border,rgba(232,118,0,0.12)); }
+.menu-type-panel:last-child { border-bottom: none; }
 .menu-type-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.625rem;
-    padding: 0.25rem 0.65rem;
-    border-radius: 999px;
+    display: inline-flex; align-items: center; gap: 0.35rem;
+    font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+    margin-bottom: 0.625rem; padding: 0.25rem 0.65rem; border-radius: 999px;
 }
+.menu-type-label.normal { background: rgba(232,118,0,0.12); color: #c96700; }
+.menu-type-label.vegetariano { background: rgba(34,197,94,0.12); color: #15803d; }
 
-.menu-type-label.normal {
-    background: rgba(232,118,0,0.12);
-    color: #c96700;
-}
-
-.menu-type-label.vegetariano {
-    background: rgba(34,197,94,0.12);
-    color: #15803d;
-}
-
-.menu-main-dish {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--text, #1a1a2e);
-    margin-bottom: 0.35rem;
-    line-height: 1.3;
-}
-
-.menu-details {
-    font-size: 0.82rem;
-    color: var(--text-muted, #6b7280);
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-}
-
-.menu-detail-row {
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
-}
-
-.menu-detail-dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #e87600;
-    flex-shrink: 0;
-}
-
-.menu-notes {
-    font-size: 0.78rem;
-    color: var(--text-muted, #6b7280);
-    font-style: italic;
-    margin-bottom: 0.5rem;
-}
-
+.menu-main-dish { font-size: 1rem; font-weight: 700; color: var(--text,#1a1a2e); margin-bottom: 0.35rem; line-height: 1.3; }
+.menu-details { font-size: 0.82rem; color: var(--text-muted,#6b7280); line-height: 1.5; margin-bottom: 0.5rem; }
+.menu-detail-row { display: flex; align-items: center; gap: 0.35rem; }
+.menu-detail-dot { width: 5px; height: 5px; border-radius: 50%; background: #e87600; flex-shrink: 0; }
+.menu-notes { font-size: 0.78rem; color: var(--text-muted,#6b7280); font-style: italic; margin-bottom: 0.5rem; }
 .menu-seats {
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: var(--text, #1a1a2e);
-    margin-bottom: 0.75rem;
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
+    font-size: 0.82rem; font-weight: 600; color: var(--text,#1a1a2e);
+    margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.35rem;
 }
-
 .menu-seats-count {
-    background: rgba(232,118,0,0.12);
-    color: #e87600;
-    padding: 0.15rem 0.5rem;
-    border-radius: 999px;
-    font-weight: 700;
+    background: rgba(232,118,0,0.12); color: #e87600;
+    padding: 0.15rem 0.5rem; border-radius: 999px; font-weight: 700;
+}
+.menu-seats-count.full { background: rgba(239,68,68,0.10); color: #dc2626; }
+.menu-empty { color: var(--text-muted,#6b7280); font-size: 0.875rem; font-style: italic; padding: 0.5rem 0; }
+
+.btn-book {
+    display: inline-flex; align-items: center; gap: 0.35rem;
+    height: 2.25rem; padding: 0 1rem;
+    background: linear-gradient(135deg, #e87600, #ffb14e);
+    color: #fff; border: none; border-radius: 0.625rem;
+    font-size: 0.85rem; font-weight: 700; cursor: pointer;
+    transition: all 180ms ease; box-shadow: 0 3px 10px rgba(232,118,0,0.30);
+}
+.btn-book:hover { box-shadow: 0 5px 16px rgba(232,118,0,0.45); transform: translateY(-1px); }
+.btn-book:disabled { opacity: 0.45; cursor: not-allowed; transform: none; box-shadow: none; }
+
+.already-booked-label {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    height: 2.25rem; padding: 0 1rem;
+    background: rgba(34,197,94,0.10); color: #16a34a;
+    border: 1.5px solid rgba(34,197,94,0.30); border-radius: 0.625rem;
+    font-size: 0.82rem; font-weight: 700;
 }
 
-.menu-empty {
-    color: var(--text-muted, #6b7280);
-    font-size: 0.875rem;
-    font-style: italic;
+.menu-alert {
+    border-radius: 0.875rem; padding: 0.875rem 1.25rem; margin-bottom: 1.25rem; font-weight: 500;
+}
+.menu-alert.success { background: rgba(34,197,94,0.10); color: #15803d; border: 1px solid rgba(34,197,94,0.20); }
+.menu-alert.danger { background: rgba(239,68,68,0.10); color: #dc2626; border: 1px solid rgba(239,68,68,0.20); }
+
+.login-note {
+    font-size: 0.8rem; color: var(--text-muted,#6b7280);
     padding: 0.5rem 0;
 }
+.login-note a { color: #e87600; font-weight: 600; }
 
-/* Book button */
-.btn-book {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    height: 2.25rem;
-    padding: 0 1rem;
-    background: linear-gradient(135deg, #e87600, #ffb14e);
-    color: #fff;
-    border: none;
-    border-radius: 0.625rem;
-    font-size: 0.85rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 180ms ease;
-    box-shadow: 0 3px 10px rgba(232,118,0,0.30);
-}
-
-.btn-book:hover {
-    box-shadow: 0 5px 16px rgba(232,118,0,0.45);
-    transform: translateY(-1px);
-}
-
-/* Alerts */
-.menu-alert {
-    border-radius: 0.875rem;
-    padding: 0.875rem 1.25rem;
-    margin-bottom: 1.25rem;
-    font-weight: 500;
-}
-
-.menu-alert.success {
-    background: rgba(34,197,94,0.10);
-    color: #15803d;
-    border: 1px solid rgba(34,197,94,0.20);
-}
-
-.menu-alert.danger {
-    background: rgba(239,68,68,0.10);
-    color: #dc2626;
-    border: 1px solid rgba(239,68,68,0.20);
-}
-
-@@media (max-width: 640px) {
-    .menu-days-grid {
-        grid-template-columns: 1fr;
-    }
-}
+@@media (max-width: 640px) { .menu-days-grid { grid-template-columns: 1fr; } }
 </style>
+}
+
+@{
+    // Prev/next week navigation: shift by 7 days (weekday-only view)
+    var prevWeek = Model.WeekStart.AddDays(-7).ToString("yyyy-MM-dd");
+    var nextWeek = Model.WeekStart.AddDays(7).ToString("yyyy-MM-dd");
 }
 
 <div class="menu-page">
     <div class="menu-page-header">
         <h1>🍽️ Menu Semanal</h1>
-        <p>Semana de @Model.WeekStart.ToString("dd MMM yyyy") a @Model.WeekStart.AddDays(6).ToString("dd MMM yyyy")</p>
+        <p>@Model.WeekStart.ToString("dd MMM") a @weekEndDate.ToString("dd MMM yyyy")</p>
     </div>
 
     @if (TempData["BookingMessage"] != null)
@@ -271,49 +150,77 @@
         </div>
     }
 
-    <form method="get" class="week-picker">
-        <label for="weekStart">📅 Semana:</label>
-        <input type="date" id="weekStart" name="weekStart" value="@weekStartValue" onchange="this.form.submit()" />
-    </form>
+    <div class="week-nav">
+        <span class="week-nav-title">
+            Semana de @Model.WeekStart.ToString("dd/MM") a @weekEndDate.ToString("dd/MM/yyyy")
+        </span>
+        <a class="btn-week" href="@Url.Action("Index", "Menu", new { weekStart = prevWeek })">← Semana anterior</a>
+        <a class="btn-week" href="@Url.Action("Index", "Menu", new { weekStart = nextWeek })">Próxima semana →</a>
+    </div>
 
     <div class="menu-days-grid">
         @foreach (var day in Model.Days)
         {
-            <div class="menu-day-card">
+            var isBooked = Model.BookedDates.Contains(day.Date);
+            <div class="menu-day-card @(isBooked ? "already-booked" : "")">
                 <div class="menu-day-header">
                     <span class="menu-day-name">@day.Date.ToString("dddd")</span>
-                    <span class="menu-day-date">@day.Date.ToString("dd/MM")</span>
+                    <span class="menu-day-date">
+                        @if (isBooked)
+                        {
+                            <span class="booked-badge">✓ Reservado</span>
+                        }
+                        else
+                        {
+                            @day.Date.ToString("dd/MM")
+                        }
+                    </span>
                 </div>
                 <div class="menu-day-body">
-                    <!-- Normal -->
+
+                    @* ── Normal ────────────────────────────────────── *@
                     <div class="menu-type-panel">
                         <div class="menu-type-label normal">🍖 Normal</div>
                         @if (day.Normal != null)
                         {
                             <div class="menu-main-dish">@day.Normal.MainDish</div>
                             <div class="menu-details">
-                                <div class="menu-detail-row">
-                                    <span class="menu-detail-dot"></span>
-                                    Sopa: @day.Normal.Soup
-                                </div>
-                                <div class="menu-detail-row">
-                                    <span class="menu-detail-dot"></span>
-                                    Sobremesa: @day.Normal.Dessert
-                                </div>
+                                <div class="menu-detail-row"><span class="menu-detail-dot"></span>Sopa: @day.Normal.Soup</div>
+                                <div class="menu-detail-row"><span class="menu-detail-dot"></span>Sobremesa: @day.Normal.Dessert</div>
                             </div>
                             @if (!string.IsNullOrWhiteSpace(day.Normal.Notes))
                             {
                                 <div class="menu-notes">ℹ️ @day.Normal.Notes</div>
                             }
                             <div class="menu-seats">
-                                Vagas: <span class="menu-seats-count">@day.Normal.AvailableSeats</span>
+                                Vagas:
+                                <span class="menu-seats-count @(day.Normal.AvailableSeats <= 0 ? "full" : "")">
+                                    @(day.Normal.AvailableSeats <= 0 ? "Esgotado" : day.Normal.AvailableSeats.ToString())
+                                </span>
                             </div>
-                            <form method="post" asp-controller="Booking" asp-action="Book" class="m-0">
-                                @Html.AntiForgeryToken()
-                                <input type="hidden" name="menuId" value="@day.Normal.MId" />
-                                <input type="hidden" name="weekStart" value="@weekStartValue" />
-                                <button type="submit" class="btn-book">📅 Marcar</button>
-                            </form>
+
+                            @if (isBooked)
+                            {
+                                <span class="already-booked-label">✓ Dia já reservado</span>
+                            }
+                            else if (!(User.Identity?.IsAuthenticated ?? false))
+                            {
+                                <p class="login-note">
+                                    <a href="@Url.Action("Login","Auth")">Inicia sessão</a> para reservar.
+                                </p>
+                            }
+                            else
+                            {
+                                <form method="post" asp-controller="Booking" asp-action="Book" class="m-0">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="menuId" value="@day.Normal.MId" />
+                                    <input type="hidden" name="weekStart" value="@weekStartValue" />
+                                    <button type="submit" class="btn-book"
+                                            @(day.Normal.AvailableSeats <= 0 ? "disabled" : "")>
+                                        📅 Marcar
+                                    </button>
+                                </form>
+                            }
                         }
                         else
                         {
@@ -321,41 +228,56 @@
                         }
                     </div>
 
-                    <!-- Vegetariano -->
+                    @* ── Vegetariano ───────────────────────────────── *@
                     <div class="menu-type-panel">
                         <div class="menu-type-label vegetariano">🥗 Vegetariano</div>
                         @if (day.Vegetarian != null)
                         {
                             <div class="menu-main-dish">@day.Vegetarian.MainDish</div>
                             <div class="menu-details">
-                                <div class="menu-detail-row">
-                                    <span class="menu-detail-dot"></span>
-                                    Sopa: @day.Vegetarian.Soup
-                                </div>
-                                <div class="menu-detail-row">
-                                    <span class="menu-detail-dot"></span>
-                                    Sobremesa: @day.Vegetarian.Dessert
-                                </div>
+                                <div class="menu-detail-row"><span class="menu-detail-dot"></span>Sopa: @day.Vegetarian.Soup</div>
+                                <div class="menu-detail-row"><span class="menu-detail-dot"></span>Sobremesa: @day.Vegetarian.Dessert</div>
                             </div>
                             @if (!string.IsNullOrWhiteSpace(day.Vegetarian.Notes))
                             {
                                 <div class="menu-notes">ℹ️ @day.Vegetarian.Notes</div>
                             }
                             <div class="menu-seats">
-                                Vagas: <span class="menu-seats-count">@day.Vegetarian.AvailableSeats</span>
+                                Vagas:
+                                <span class="menu-seats-count @(day.Vegetarian.AvailableSeats <= 0 ? "full" : "")">
+                                    @(day.Vegetarian.AvailableSeats <= 0 ? "Esgotado" : day.Vegetarian.AvailableSeats.ToString())
+                                </span>
                             </div>
-                            <form method="post" asp-controller="Booking" asp-action="Book" class="m-0">
-                                @Html.AntiForgeryToken()
-                                <input type="hidden" name="menuId" value="@day.Vegetarian.MId" />
-                                <input type="hidden" name="weekStart" value="@weekStartValue" />
-                                <button type="submit" class="btn-book">📅 Marcar</button>
-                            </form>
+
+                            @if (isBooked)
+                            {
+                                <span class="already-booked-label">✓ Dia já reservado</span>
+                            }
+                            else if (!(User.Identity?.IsAuthenticated ?? false))
+                            {
+                                <p class="login-note">
+                                    <a href="@Url.Action("Login","Auth")">Inicia sessão</a> para reservar.
+                                </p>
+                            }
+                            else
+                            {
+                                <form method="post" asp-controller="Booking" asp-action="Book" class="m-0">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="menuId" value="@day.Vegetarian.MId" />
+                                    <input type="hidden" name="weekStart" value="@weekStartValue" />
+                                    <button type="submit" class="btn-book"
+                                            @(day.Vegetarian.AvailableSeats <= 0 ? "disabled" : "")>
+                                        📅 Marcar
+                                    </button>
+                                </form>
+                            }
                         }
                         else
                         {
                             <div class="menu-empty">Sem menu disponível</div>
                         }
                     </div>
+
                 </div>
             </div>
         }

@@ -9,28 +9,59 @@ namespace MVCAPIFriedBananas.Controllers
     public class MenuController : Controller
     {
         private readonly MenuApiClient _menus;
+        private readonly BookingApiClient _bookings;
 
-        public MenuController(MenuApiClient menus)
+        public MenuController(MenuApiClient menus, BookingApiClient bookings)
         {
             _menus = menus;
+            _bookings = bookings;
         }
 
         [HttpGet]
         public async Task<IActionResult> Index(DateOnly? weekStart)
         {
-            // Align to Monday
+            // Align to Monday of requested (or current) week
             var today = DateOnly.FromDateTime(DateTime.Today);
             var start = weekStart ?? today.AddDays(-(int)today.DayOfWeek + (int)DayOfWeek.Monday);
-            var end = start.AddDays(6);
+            // Clamp: if chosen date landed on a weekend, advance to next Monday
+            if (start.DayOfWeek == DayOfWeek.Saturday)
+                start = start.AddDays(2);
+            else if (start.DayOfWeek == DayOfWeek.Sunday)
+                start = start.AddDays(1);
+
+            // Only show Mon–Fri (5 weekdays)
+            var end = start.AddDays(4);
 
             var dtoList = await _menus.GetRangeAsync(start, end);
+
+            // Load the current user's bookings for this week (ignore errors if not logged in)
+            var bookedDates = new HashSet<DateOnly>();
+            if (User.Identity?.IsAuthenticated == true)
+            {
+                try
+                {
+                    var myBookings = await _bookings.GetMyBookingsAsync();
+                    foreach (var b in myBookings)
+                    {
+                        var d = DateOnly.FromDateTime(b.Date);
+                        if (d >= start && d <= end)
+                            bookedDates.Add(d);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Non-critical: show page without booking state (e.g. user not logged in yet)
+                    Console.Error.WriteLine($"[MenuController] Could not load bookings: {ex.Message}");
+                }
+            }
 
             var vm = new WeeklyMenuViewModel
             {
                 WeekStart = start,
-                Days = Enumerable.Range(0, 7)
+                Days = Enumerable.Range(0, 5)           // Mon to Fri only
                     .Select(i => BuildDay(start.AddDays(i), dtoList))
-                    .ToList()
+                    .ToList(),
+                BookedDates = bookedDates
             };
 
             return View(vm);
@@ -53,7 +84,7 @@ namespace MVCAPIFriedBananas.Controllers
         private static MenuItemViewModel? MapItem(MenusDto? m) =>
             m == null ? null : new MenuItemViewModel
             {
-                MId = m.MId, // or m.Id if that’s your DTO property name
+                MId = m.MId,
                 Date = m.Date.HasValue ? DateOnly.FromDateTime(m.Date.Value) : default,
                 Type = m.Type,
                 MainDish = m.MainDish,
@@ -65,4 +96,4 @@ namespace MVCAPIFriedBananas.Controllers
                 AvailableSeats = m.AvailableSeats
             };
     }
-    }
+}

@@ -23,7 +23,7 @@ builder.Services.AddScoped<ProductsApiClient>();
 builder.Services.AddScoped<UsersApiClient>();
 builder.Services.AddScoped<OrderApiClient>();
 builder.Services.AddScoped<MenuApiClient>();
-// builder.Services.AddScoped<BookingApiClient>();
+builder.Services.AddScoped<BookingApiClient>();
 
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddDistributedMemoryCache();
