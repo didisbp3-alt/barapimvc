@@ -35,14 +35,9 @@
                         }
                     </div>
                     <div class="row gap-1" style="flex-direction:row;">
-                        <form asp-action="AddToCart" method="post" class="m-0">
-                            @Html.AntiForgeryToken()
-                            <input type="hidden" name="id" value="@p.ProdId" />
-                            <button type="submit" class="btn btn-primary btn-small">Adicionar</button>
-                        </form>
-                        <a class="btn btn-warning btn-small" asp-action="Edit" asp-route-id="@p.ProdId">Editar</a>
+                        <a class="btn btn-warning btn-small" asp-action="Edit" asp-route-id="@p.ProdId">✏️ Editar</a>
                         <a class="btn btn-info btn-small text-white" asp-action="Details" asp-route-id="@p.ProdId">Detalhes</a>
-                        <a class="btn btn-danger btn-small" asp-action="Delete" asp-route-id="@p.ProdId">Eliminar</a>
+                        <a class="btn btn-danger btn-small" asp-action="Delete" asp-route-id="@p.ProdId">🗑️ Eliminar</a>
                     </div>
                 </div>
             </div>

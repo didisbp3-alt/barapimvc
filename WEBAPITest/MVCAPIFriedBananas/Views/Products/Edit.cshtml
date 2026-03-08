@@ -1,51 +1,105 @@
-﻿@model MVCAPIFriedBananas.Views.ViewModels.ProductsViewModel
+@model MVCAPIFriedBananas.Views.ViewModels.ProductsViewModel
 @{
     ViewData["Title"] = "Editar Produto";
+    var categories = ViewBag.Categories as List<MVCAPIFriedBananas.Models.Category> ?? new List<MVCAPIFriedBananas.Models.Category>();
 }
 
-<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
-    <div class="card" style="max-width: 480px; width: 100%; padding: 2rem 2rem 1.5rem 2rem; box-shadow: var(--shadow); border-radius: var(--radius);">
-        <h2 class="mb-3 text-center" style="font-weight:700; color:var(--brand);">Editar Produto</h2>
+@section Styles {
+    <link rel="stylesheet" href="~/css/products.css" />
+}
 
-        @if (!ViewData.ModelState.IsValid)
-        {
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
-                    {
-                        <li>@error.ErrorMessage</li>
-                    }
-                </ul>
-            </div>
-        }
+<div class="d-flex justify-content-center align-items-start py-4">
+    <div style="max-width:520px; width:100%;">
+        <div class="card" style="padding:2rem 2rem 1.5rem; box-shadow:var(--p-card-shadow); border-radius:1.25rem; border:1px solid var(--p-border);">
+            <h2 class="mb-3 text-center" style="font-weight:800; color:var(--p-accent);">✏️ Editar Produto</h2>
 
-        <form asp-action="Edit" method="post" autocomplete="off">
-            <input type="hidden" asp-for="ProdId" />
-            <div class="form-group mb-3">
-                <label asp-for="Name" class="form-label"></label>
-                <input asp-for="Name" class="form-control" placeholder="Nome do produto" />
-            </div>
-            <div class="form-group mb-3">
-                <label asp-for="Description" class="form-label"></label>
-                <textarea asp-for="Description" class="form-control" placeholder="Descrição"></textarea>
-            </div>
-            <div class="form-group mb-3">
-                <label asp-for="Price" class="form-label"></label>
-                <input asp-for="Price" class="form-control" type="number" step="0.01" placeholder="Preço" />
-            </div>
-            <div class="form-group mb-3">
-                <label asp-for="StockMax" class="form-label"></label>
-                <input asp-for="StockMax" class="form-control" type="number" placeholder="Stock máximo" />
-            </div>
-            <div class="form-group mb-3">
-                <label asp-for="Cat_Id" class="form-label">Categoria</label>
-                <input asp-for="Cat_Id" class="form-control" type="number" placeholder="ID da categoria" />
-                <!-- Replace with a dropdown if you have categories -->
-            </div>
-            <button type="submit" class="btn btn-primary w-100 btn-small mb-2" style="font-weight:700;">Salvar</button>
-            <div class="text-center mt-2">
-                <a asp-action="Index" class="btn btn-ghost btn-small">Cancelar</a>
-            </div>
-        </form>
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="alert alert-danger mb-3" style="border-radius:0.75rem;">
+                    <ul class="mb-0 ps-3">
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <li>@error.ErrorMessage</li>
+                        }
+                    </ul>
+                </div>
+            }
+
+            <form asp-action="Edit" method="post" enctype="multipart/form-data" autocomplete="off">
+                <input type="hidden" asp-for="ProdId" />
+
+                <div class="form-group mb-3">
+                    <label asp-for="Name" class="form-label fw-semibold">Nome</label>
+                    <input asp-for="Name" class="form-control" placeholder="Nome do produto" />
+                    <span asp-validation-for="Name" class="text-danger small"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="form-label fw-semibold">Descrição</label>
+                    <textarea asp-for="Description" class="form-control" rows="3" placeholder="Descrição do produto"></textarea>
+                </div>
+
+                <div class="row g-2 mb-3">
+                    <div class="col">
+                        <label asp-for="Price" class="form-label fw-semibold">Preço (€)</label>
+                        <input asp-for="Price" class="form-control" type="number" step="0.01" min="0" placeholder="0.00" />
+                    </div>
+                    <div class="col">
+                        <label asp-for="DiscountPercent" class="form-label fw-semibold">Desconto (%)</label>
+                        <input asp-for="DiscountPercent" class="form-control" type="number" min="0" max="100" placeholder="0" />
+                    </div>
+                </div>
+
+                <div class="row g-2 mb-3">
+                    <div class="col">
+                        <label asp-for="StockCurrent" class="form-label fw-semibold">Stock atual</label>
+                        <input asp-for="StockCurrent" class="form-control" type="number" min="0" placeholder="0" />
+                    </div>
+                    <div class="col">
+                        <label asp-for="StockMax" class="form-label fw-semibold">Stock máximo</label>
+                        <input asp-for="StockMax" class="form-control" type="number" min="0" placeholder="0" />
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Cat_Id" class="form-label fw-semibold">Categoria</label>
+                    <select asp-for="Cat_Id" class="form-select">
+                        <option value="">— Selecionar categoria —</option>
+                        @foreach (var cat in categories)
+                        {
+                            <option value="@cat.CatId">@cat.Name</option>
+                        }
+                    </select>
+                    <span asp-validation-for="Cat_Id" class="text-danger small"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label fw-semibold">Imagem atual</label>
+                    <div class="mb-2">
+                        @if (!string.IsNullOrWhiteSpace(Model.ImageUrl))
+                        {
+                            <img src="@Model.ImageUrl" alt="Imagem atual" class="img-thumbnail"
+                                 style="max-height:120px; border-radius:0.625rem;"
+                                 onerror="this.style.display='none'; document.getElementById('no-img').style.display='block'" />
+                        }
+                        <span id="no-img" style="@(string.IsNullOrWhiteSpace(Model.ImageUrl) ? "" : "display:none;") color:var(--p-muted); font-size:0.85rem;">
+                            Sem imagem
+                        </span>
+                    </div>
+                    <label asp-for="ImageFile" class="form-label fw-semibold">Nova imagem</label>
+                    <input asp-for="ImageFile" class="form-control" type="file" accept="image/*" />
+                    <div class="form-text text-muted">Opcional — envie para substituir a imagem existente.</div>
+                </div>
+
+                <div class="d-grid gap-2 mt-4">
+                    <button type="submit" class="btn btn-primary" style="font-weight:700; height:2.75rem; border-radius:0.875rem;">
+                        💾 Guardar alterações
+                    </button>
+                    <a asp-action="AdminIndex" class="btn btn-ghost" style="height:2.75rem; border-radius:0.875rem; display:flex; align-items:center; justify-content:center;">
+                        Cancelar
+                    </a>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
