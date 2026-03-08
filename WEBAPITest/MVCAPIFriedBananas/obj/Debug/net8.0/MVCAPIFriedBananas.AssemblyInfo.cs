@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVCAPIFriedBananas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c6c9156a55daa49bc29a625f22d0132b6fea455")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dddae5330be7974ef2db853b8c1a50d23d31579f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVCAPIFriedBananas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVCAPIFriedBananas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

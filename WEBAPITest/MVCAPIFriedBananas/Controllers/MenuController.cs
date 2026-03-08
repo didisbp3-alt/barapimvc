@@ -1,14 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MVCAPIFriedBananas.Services;
-using MVCAPIFriedBananas.ViewModels;
-using MVCAPIFriedBananas.Views.ViewModels;
-using System.Net.Http.Headers;
-using System.Text.Json;
-using MVCAPIFriedBananas;
 using Microsoft.AspNetCore.Mvc;
 using MVCAPIFriedBananas.Services;
 using MVCAPIFriedBananas.ViewModels;
-using DTO_MVCAPIContracts.Contracts; // for MenusDto
+using MVCAPIFriedBananas.Views.ViewModels;
+using DTO_MVCAPIContracts.Contracts;
 
 namespace MVCAPIFriedBananas.Controllers
 {
