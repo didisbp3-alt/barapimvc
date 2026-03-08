@@ -17,7 +17,6 @@ namespace MVCAPIFriedBananas.Views.ViewModels
         public bool? IsFavorite { get; set; }
         public string? ImageUrl { get; set; }
         public int ProductType { get; set; }
-        /// <summary>Used only on Edit/Create forms for image upload; not persisted directly.</summary>
         public IFormFile? ImageFile { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace MVCAPIFriedBananas.Views.ViewModels
         public IEnumerable<string> Allergens { get; set; } = Enumerable.Empty<string>();
         public string? SelectedCategory { get; set; }
         public string? SelectedAllergen { get; set; }
-        public string? PriceRange { get; set; }   // "", "lt5", "5to10", "gt10"
+        public string? PriceRange { get; set; }
         public string? Search { get; set; }
         public int CartCount { get; set; }
         public bool FavoritesOnly { get; set; }

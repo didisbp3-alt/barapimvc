@@ -14,7 +14,6 @@ namespace MVCAPIFriedBananas.Controllers
             _bookings = bookings;
         }
 
-        // GET: /Booking  — user's booking list
         [HttpGet]
         public async Task<IActionResult> Index()
         {
@@ -31,7 +30,6 @@ namespace MVCAPIFriedBananas.Controllers
             }
         }
 
-        // POST: /Booking/Book — create a booking for a menu
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Book(int menuId, DateOnly? weekStart)
@@ -46,7 +44,6 @@ namespace MVCAPIFriedBananas.Controllers
             return RedirectToAction("Index", "Menu", new { weekStart });
         }
 
-        // POST: /Booking/Cancel — cancel a booking
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Cancel(int bookingId, string? returnUrl)
@@ -64,22 +61,16 @@ namespace MVCAPIFriedBananas.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // Extract a clean message from the API response (strips JSON wrapping if present)
         private static string ParseMessage(string raw, string fallback)
         {
             if (string.IsNullOrWhiteSpace(raw)) return fallback;
-            // API may return {"message":"..."} — try to extract the inner text
             try
             {
                 using var doc = System.Text.Json.JsonDocument.Parse(raw);
                 if (doc.RootElement.TryGetProperty("message", out var prop))
                     return prop.GetString() ?? fallback;
             }
-            catch (System.Text.Json.JsonException)
-            {
-                /* not JSON — return raw string as-is */
-            }
-            // Strip outer quotes if the whole thing is a JSON string
+            catch (System.Text.Json.JsonException) { }
             return raw.Trim('"', ' ');
         }
     }

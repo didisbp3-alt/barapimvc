@@ -23,7 +23,6 @@ public class MenuApiClient
             string.IsNullOrEmpty(token) ? null : new AuthenticationHeaderValue("Bearer", token);
     }
 
-    // Existing
     public async Task<List<MenusDto>> GetAllAsync()
     {
         AddAuthorizationHeader();
@@ -31,23 +30,20 @@ public class MenuApiClient
         return items ?? new List<MenusDto>();
     }
 
-    // Existing
     public async Task<MenusDto?> GetByIdAsync(int id)
     {
         AddAuthorizationHeader();
         return await _httpClient.GetFromJsonAsync<MenusDto>($"api/Menus/{id}");
     }
 
-    // New: fetch menus by date range (inclusive)
     public async Task<List<MenusDto>> GetRangeAsync(DateOnly start, DateOnly end)
     {
         AddAuthorizationHeader();
-        var url = $"api/Menus?start={start:yyyy-MM-dd}&end={end:yyyy-MM-dd}";
+        var url   = $"api/Menus?start={start:yyyy-MM-dd}&end={end:yyyy-MM-dd}";
         var items = await _httpClient.GetFromJsonAsync<List<MenusDto>>(url);
         return items ?? new List<MenusDto>();
     }
 
-    // New: book a menu (adjust route/body if your API differs)
     public async Task<LunchBookingDto?> BookAsync(int menuId)
     {
         AddAuthorizationHeader();

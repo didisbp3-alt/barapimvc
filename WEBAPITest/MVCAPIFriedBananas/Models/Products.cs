@@ -4,7 +4,7 @@
     {
         public int ProdId { get; set; }
         public int CatId { get; set; }
-        public string? CategoryName { get; set; }   // add this
+        public string? CategoryName { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public int DiscountPercent { get; set; }

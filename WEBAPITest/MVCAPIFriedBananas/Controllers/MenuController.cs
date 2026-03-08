@@ -20,21 +20,17 @@ namespace MVCAPIFriedBananas.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(DateOnly? weekStart)
         {
-            // Align to Monday of requested (or current) week
             var today = DateOnly.FromDateTime(DateTime.Today);
             var start = weekStart ?? today.AddDays(-(int)today.DayOfWeek + (int)DayOfWeek.Monday);
-            // Clamp: if chosen date landed on a weekend, advance to next Monday
+
             if (start.DayOfWeek == DayOfWeek.Saturday)
                 start = start.AddDays(2);
             else if (start.DayOfWeek == DayOfWeek.Sunday)
                 start = start.AddDays(1);
 
-            // Only show Mon–Fri (5 weekdays)
             var end = start.AddDays(4);
-
             var dtoList = await _menus.GetRangeAsync(start, end);
 
-            // Load the current user's bookings for this week (ignore errors if not logged in)
             var bookedDates = new HashSet<DateOnly>();
             if (User.Identity?.IsAuthenticated == true)
             {
@@ -50,18 +46,15 @@ namespace MVCAPIFriedBananas.Controllers
                 }
                 catch (Exception ex)
                 {
-                    // Non-critical: show page without booking state (e.g. user not logged in yet)
                     Console.Error.WriteLine($"[MenuController] Could not load bookings: {ex.Message}");
                 }
             }
 
             var vm = new WeeklyMenuViewModel
             {
-                WeekStart = start,
-                Days = Enumerable.Range(0, 5)           // Mon to Fri only
-                    .Select(i => BuildDay(start.AddDays(i), dtoList))
-                    .ToList(),
-                BookedDates = bookedDates
+                WeekStart    = start,
+                Days         = Enumerable.Range(0, 5).Select(i => BuildDay(start.AddDays(i), dtoList)).ToList(),
+                BookedDates  = bookedDates
             };
 
             return View(vm);
@@ -75,24 +68,24 @@ namespace MVCAPIFriedBananas.Controllers
 
             return new MenuDayViewModel
             {
-                Date = day,
-                Normal = MapItem(daily.FirstOrDefault(m => m.Type == false)),
-                Vegetarian = MapItem(daily.FirstOrDefault(m => m.Type == true))
+                Date        = day,
+                Normal      = MapItem(daily.FirstOrDefault(m => m.Type == false)),
+                Vegetarian  = MapItem(daily.FirstOrDefault(m => m.Type == true))
             };
         }
 
         private static MenuItemViewModel? MapItem(MenusDto? m) =>
             m == null ? null : new MenuItemViewModel
             {
-                MId = m.MId,
-                Date = m.Date.HasValue ? DateOnly.FromDateTime(m.Date.Value) : default,
-                Type = m.Type,
-                MainDish = m.MainDish,
-                Soup = m.Soup,
-                Dessert = m.Dessert,
-                Notes = m.Notes,
-                MaxSeats = m.MaxSeats,
-                UsedSeats = m.UsedSeats,
+                MId            = m.MId,
+                Date           = m.Date.HasValue ? DateOnly.FromDateTime(m.Date.Value) : default,
+                Type           = m.Type,
+                MainDish       = m.MainDish,
+                Soup           = m.Soup,
+                Dessert        = m.Dessert,
+                Notes          = m.Notes,
+                MaxSeats       = m.MaxSeats,
+                UsedSeats      = m.UsedSeats,
                 AvailableSeats = m.AvailableSeats
             };
     }

@@ -1,21 +1,20 @@
-﻿using DTO_MVCAPIContracts.Contracts;
+using DTO_MVCAPIContracts.Contracts;
 using System.Net;
-using System.Net.Http;
 using System.Net.Http.Headers;
 
 public class OrderApiClient
 {
     private readonly HttpClient _http;
     private readonly IHttpContextAccessor _ctx;
-    private const string OrderGetRoute = "api/Orders/cart";
-    private const string OrderAddRoute = "api/Orders/add";
+    private const string OrderGetRoute    = "api/Orders/cart";
+    private const string OrderAddRoute    = "api/Orders/add";
     private const string OrderUpdateRoute = "api/Orders/update";
     private const string OrderRemoveRoute = "api/Orders/remove";
 
     public OrderApiClient(IHttpClientFactory f, IHttpContextAccessor ctx)
     {
         _http = f.CreateClient("BarEscolaApi");
-        _ctx = ctx;
+        _ctx  = ctx;
     }
 
     private void Auth()
@@ -28,18 +27,13 @@ public class OrderApiClient
     public async Task<OrderDto> GetCartAsync()
     {
         Auth();
-        // If not authenticated, return empty cart
         if (_ctx.HttpContext?.Session.GetString("JwtToken") == null)
             return new OrderDto { Items = Array.Empty<OrderItemDto>(), Subtotal = 0m, Total = 0m };
 
         var res = await _http.GetAsync(OrderGetRoute);
 
-        if (res.StatusCode == HttpStatusCode.NotFound ||
-            res.StatusCode == HttpStatusCode.Unauthorized ||
-            res.StatusCode == HttpStatusCode.Forbidden)
-        {
+        if (res.StatusCode is HttpStatusCode.NotFound or HttpStatusCode.Unauthorized or HttpStatusCode.Forbidden)
             return new OrderDto { Items = Array.Empty<OrderItemDto>(), Subtotal = 0m, Total = 0m };
-        }
 
         if (!res.IsSuccessStatusCode)
         {

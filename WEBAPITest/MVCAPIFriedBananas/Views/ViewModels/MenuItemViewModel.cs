@@ -4,7 +4,7 @@
     {
         public int MId { get; set; }
         public DateOnly Date { get; set; }
-        public bool? Type { get; set; }               // false = Normal, true = Veggie
+        public bool? Type { get; set; }
         public string MainDish { get; set; } = "";
         public string Soup { get; set; } = "";
         public string Dessert { get; set; } = "";

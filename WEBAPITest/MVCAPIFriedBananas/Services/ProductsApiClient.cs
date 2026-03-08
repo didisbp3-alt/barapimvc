@@ -1,4 +1,4 @@
-﻿using System.Net.Http.Headers;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using Microsoft.AspNetCore.Http;
 using MVCAPIFriedBananas.Models;
@@ -20,12 +20,9 @@ namespace MVCAPIFriedBananas.Services
         {
             var token = _httpContextAccessor.HttpContext?.Session.GetString("JwtToken");
             if (!string.IsNullOrEmpty(token))
-            {
                 _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            }
         }
 
-        // ---------- Products ----------
         public async Task<List<Product>> GetProductsAsync()
         {
             AddAuthorizationHeader();
@@ -60,7 +57,6 @@ namespace MVCAPIFriedBananas.Services
             return response.IsSuccessStatusCode;
         }
 
-        // ---------- Image Upload ----------
         public async Task<string?> UploadProductImageAsync(int productId, IFormFile file)
         {
             AddAuthorizationHeader();
@@ -74,10 +70,8 @@ namespace MVCAPIFriedBananas.Services
             content.Add(streamContent, "file", file.FileName);
 
             var response = await _httpClient.PostAsync($"api/ProductsAdmin/{productId}/upload-image", content);
-            if (!response.IsSuccessStatusCode)
-                return null;
+            if (!response.IsSuccessStatusCode) return null;
 
-            // The API returns { prodId, imgPath }
             var result = await response.Content.ReadFromJsonAsync<UploadImageResult>();
             return result?.imgPath;
         }
@@ -85,7 +79,7 @@ namespace MVCAPIFriedBananas.Services
         private class UploadImageResult
         {
             public int prodId { get; set; }
-            public string imgPath { get; set; }
+            public string? imgPath { get; set; }
         }
     }
 }

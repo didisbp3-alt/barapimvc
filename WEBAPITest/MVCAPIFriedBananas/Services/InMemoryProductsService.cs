@@ -3,7 +3,7 @@ using MVCAPIFriedBananas.Models;
 
 namespace MVCAPIFriedBananas.Services
 {
-    // Simple in-memory implementation for demo/testing
+
     public class InMemoryProductsService : IProductsService
     {
         private readonly ConcurrentDictionary<int, Product> _store = new();

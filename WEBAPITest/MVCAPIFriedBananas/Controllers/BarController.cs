@@ -1,74 +1,30 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MVCAPIFriedBananas.Models;
-using MVCAPIFriedBananas.Services; // your Product service abstraction
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using MVCAPIFriedBananas.Services;
 
 namespace MVCAPIFriedBananas.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    [Authorize] // remove or adjust if you want anonymous access
-    public class BarController : ControllerBase
+    [Authorize]
+    public class BarController : Controller
     {
-        private readonly IProductsService _service;
+        private readonly ProductsApiClient _products;
 
-        public BarController(IProductsService service)
+        public BarController(ProductsApiClient products)
         {
-            _service = service;
+            _products = products;
         }
 
-        // GET: api/Products
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetAll()
+        public async Task<IActionResult> Index()
         {
-            var products = await _service.GetAllAsync();
-            return Ok(products);
+            var products = await _products.GetProductsAsync();
+            return View(products);
         }
 
-        // GET: api/Products/5
-        [HttpGet("{id:int}")]
-        public async Task<ActionResult<Product>> GetById(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            var product = await _service.GetByIdAsync(id);
-            if (product == null)
-                return NotFound();
-            return Ok(product);
-        }
-
-        // POST: api/Products
-        [HttpPost]
-        public async Task<ActionResult<Product>> Create(Product product)
-        {
-            var created = await _service.CreateAsync(product);
-            // Returns 201 with Location header
-            return CreatedAtAction(nameof(GetById), new { id = created.ProdId }, created);
-        }
-
-        // PUT: api/Products/5
-        [HttpPut("{id:int}")]
-        public async Task<IActionResult> Update(int id, Product product)
-        {
-            if (id != product.ProdId)
-                return BadRequest("ID mismatch.");
-
-            var updated = await _service.UpdateAsync(product);
-            if (!updated)
-                return NotFound();
-
-            return NoContent();
-        }
-
-        // DELETE: api/Products/5
-        [HttpDelete("{id:int}")]
-        public async Task<IActionResult> Delete(int id)
-        {
-            var deleted = await _service.DeleteAsync(id);
-            if (!deleted)
-                return NotFound();
-
-            return NoContent();
+            var product = await _products.GetProductAsync(id);
+            if (product == null) return NotFound();
+            return View(product);
         }
     }
 }

@@ -7,13 +7,11 @@
 <div class="login-page">
     <div class="login-card">
 
-        <!-- Header -->
         <div class="login-header">
             <h1>Criar Conta</h1>
             <p>Acesso à plataforma</p>
         </div>
 
-        <!-- Body -->
         <div class="login-body">
 
             @if (!ViewData.ModelState.IsValid)
@@ -72,9 +70,7 @@
 
 <style>
 
-    /* ===========================
-           LOGIN – FORCE GENESIS STYLE
-           =========================== */
+    
 
     .login-page {
         min-height: 100vh;
@@ -85,7 +81,7 @@
         padding-top: 10vh;
     }
 
-    /* CARD */
+    
     .login-card {
         width: 100%;
         max-width: 420px;
@@ -94,7 +90,7 @@
         box-shadow: 0 30px 60px rgba(0,0,0,0.18);
     }
 
-    /* HEADER */
+    
     .login-header {
         text-align: center;
         padding: 3rem 2.5rem 1.5rem;
@@ -111,12 +107,12 @@
             color: var(--text-muted);
         }
 
-    /* BODY */
+    
     .login-body {
         padding: 2.5rem;
     }
 
-    /* FIELD */
+    
     .login-field {
         margin-bottom: 1.75rem;
     }
@@ -128,7 +124,7 @@
         }
 
         .login-field input {
-            width: 90%;
+            width: 100%;
             height: 3.1rem;
             padding: 0.6rem 1.25rem;
             font-size: 0.95rem;
@@ -144,7 +140,7 @@
                 box-shadow: 0 0 0 4px rgba(232,118,0,0.2);
             }
 
-    /* BUTTON */
+    
     .login-body .btn-primary {
         width: 100%;
         height: 3.9rem;
@@ -153,7 +149,7 @@
         margin-top: 0.5rem;
     }
 
-    /* FOOTER */
+    
     .login-footer {
         margin-top: 2.25rem;
         text-align: center;
@@ -165,15 +161,14 @@
             font-weight: 500;
         }
 
-    /* Register button */
+    
     .login-register-btn {
         border-radius: 999px;
         padding: 0.55rem 1.5rem;
         font-size: 0.9rem;
     }
 
-
-    /* ALERTS */
+    
     .login-body .alert {
         border-radius: 999px;
         text-align: center;

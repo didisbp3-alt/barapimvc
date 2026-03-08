@@ -16,12 +16,10 @@ namespace MVCAPIFriedBananas.Controllers
 
         public ProductsController(ProductsApiClient products, OrderApiClient orders, CategoriesApiClient categoriesApiClient)
         {
-            _products = products;
-            _orders = orders;
+            _products   = products;
+            _orders     = orders;
             _categories = categoriesApiClient;
         }
-
-        // ── Helpers: session-based favorites ───────────────────────────
 
         private HashSet<int> GetFavorites()
         {
@@ -40,7 +38,6 @@ namespace MVCAPIFriedBananas.Controllers
                 p.IsFavorite = favs.Contains(p.ProdId);
         }
 
-        // POST: /Products/ToggleFavorite/{id}
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult ToggleFavorite(int id)
@@ -53,8 +50,6 @@ namespace MVCAPIFriedBananas.Controllers
             return Json(new { isFavorite = isFav, productId = id });
         }
 
-        // ── Main product listing ────────────────────────────────────────
-
         [HttpGet]
         public async Task<IActionResult> Index([FromQuery] ProductsPageViewModel query)
         {
@@ -64,11 +59,11 @@ namespace MVCAPIFriedBananas.Controllers
 
             ApplyFavoritesToProducts(products);
 
-            var order = await _orders.GetCartAsync();
-            var cartCount = order?.Items?.Sum(i => i.Quantity) ?? 0;
+            var order      = await _orders.GetCartAsync();
+            var cartCount  = order?.Items?.Sum(i => i.Quantity) ?? 0;
 
             var categoriesList = await _categories.GetCategoriesAsync();
-            var categories = categoriesList
+            var categories     = categoriesList
                 .Select(c => c.Name)
                 .Distinct(StringComparer.OrdinalIgnoreCase)
                 .OrderBy(c => c)
@@ -84,15 +79,15 @@ namespace MVCAPIFriedBananas.Controllers
 
             var vm = new ProductsPageViewModel
             {
-                Categories = categories,
-                Allergens = allergens,
+                Categories       = categories,
+                Allergens        = allergens,
                 SelectedCategory = query.SelectedCategory,
                 SelectedAllergen = query.SelectedAllergen,
-                PriceRange = query.PriceRange,
-                Search = query.Search,
-                FavoritesOnly = query.FavoritesOnly,
-                Items = filtered.Select(p => ToCard(p, categoriesList)).ToList(),
-                CartCount = cartCount
+                PriceRange       = query.PriceRange,
+                Search           = query.Search,
+                FavoritesOnly    = query.FavoritesOnly,
+                Items            = filtered.Select(p => ToCard(p, categoriesList)).ToList(),
+                CartCount        = cartCount
             };
 
             return View(vm);
@@ -105,11 +100,11 @@ namespace MVCAPIFriedBananas.Controllers
             var products = (await _products.GetProductsAsync()).ToList();
             ApplyFavoritesToProducts(products);
 
-            var order = await _orders.GetCartAsync();
+            var order     = await _orders.GetCartAsync();
             var cartCount = order?.Items?.Sum(i => i.Quantity) ?? 0;
 
             var categoriesList = await _categories.GetCategoriesAsync();
-            var categories = categoriesList
+            var categories     = categoriesList
                 .Select(c => c.Name)
                 .Distinct(StringComparer.OrdinalIgnoreCase)
                 .OrderBy(c => c)
@@ -125,16 +120,16 @@ namespace MVCAPIFriedBananas.Controllers
 
             var vm = new ProductsPageViewModel
             {
-                Categories = categories,
-                CategoryList = categoriesList,
-                Allergens = allergens,
+                Categories       = categories,
+                CategoryList     = categoriesList,
+                Allergens        = allergens,
                 SelectedCategory = query.SelectedCategory,
                 SelectedAllergen = query.SelectedAllergen,
-                PriceRange = query.PriceRange,
-                Search = query.Search,
-                FavoritesOnly = query.FavoritesOnly,
-                Items = filtered.Select(p => ToCard(p, categoriesList)).ToList(),
-                CartCount = cartCount
+                PriceRange       = query.PriceRange,
+                Search           = query.Search,
+                FavoritesOnly    = query.FavoritesOnly,
+                Items            = filtered.Select(p => ToCard(p, categoriesList)).ToList(),
+                CartCount        = cartCount
             };
 
             return View("AdminIndex", vm);
@@ -158,7 +153,6 @@ namespace MVCAPIFriedBananas.Controllers
             return PartialView("_ProductCard", filtered);
         }
 
-        // GET: /Products/Highlights
         [HttpGet]
         public async Task<IActionResult> Highlights()
         {
@@ -168,17 +162,16 @@ namespace MVCAPIFriedBananas.Controllers
 
             ApplyFavoritesToProducts(products);
 
-            var favIds = GetFavorites();
+            var favIds         = GetFavorites();
             var categoriesList = await _categories.GetCategoriesAsync();
 
-            // Highlights = products with a discount or that are favorited
             var highlighted = products
                 .Where(p => (p.DiscountPercent > 0) || favIds.Contains(p.ProdId))
                 .ToList();
 
             var vm = new ProductsPageViewModel
             {
-                Items = highlighted.Select(p => ToCard(p, categoriesList)).ToList(),
+                Items      = highlighted.Select(p => ToCard(p, categoriesList)).ToList(),
                 Categories = categoriesList.Select(c => c.Name).Distinct(StringComparer.OrdinalIgnoreCase).OrderBy(c => c).ToList(),
             };
 
@@ -191,30 +184,28 @@ namespace MVCAPIFriedBananas.Controllers
             if (p == null) return NotFound();
 
             var categoriesList = await _categories.GetCategoriesAsync();
-            var categoryName = categoriesList.FirstOrDefault(c => c.CatId == p.CatId)?.Name ?? $"Categoria {p.CatId}";
+            var categoryName   = categoriesList.FirstOrDefault(c => c.CatId == p.CatId)?.Name ?? $"Categoria {p.CatId}";
 
             var favs = GetFavorites();
             p.IsFavorite = favs.Contains(p.ProdId);
 
             var vm = new ProductsViewModel
             {
-                ProdId = p.ProdId,
-                Name = p.Name,
-                Description = p.Description,
-                Price = p.Price ?? 0m,
-                StockCurrent = p.CurStock,
-                StockMax = p.MaxStock,
-                ImageUrl = p.ImgPath,
+                ProdId         = p.ProdId,
+                Name           = p.Name,
+                Description    = p.Description,
+                Price          = p.Price ?? 0m,
+                StockCurrent   = p.CurStock,
+                StockMax       = p.MaxStock,
+                ImageUrl       = p.ImgPath,
                 DiscountPercent = p.DiscountPercent,
-                ProductType = p.ProductType,
-                IsFavorite = p.IsFavorite,
-                Cat_Id = p.CatId,
-                CategoryName = categoryName
+                ProductType    = p.ProductType,
+                IsFavorite     = p.IsFavorite,
+                Cat_Id         = p.CatId,
+                CategoryName   = categoryName
             };
             return View(vm);
         }
-
-        // ── Filters ─────────────────────────────────────────────────────
 
         private static IEnumerable<Product> ApplyFilters(IEnumerable<Product> products, ProductsPageViewModel q)
         {
@@ -244,10 +235,10 @@ namespace MVCAPIFriedBananas.Controllers
             {
                 list = q.PriceRange switch
                 {
-                    "lt5" => list.Where(p => (p.Price ?? 0m) < 5m),
+                    "lt5"   => list.Where(p => (p.Price ?? 0m) < 5m),
                     "5to10" => list.Where(p => (p.Price ?? 0m) >= 5m && (p.Price ?? 0m) <= 10m),
-                    "gt10" => list.Where(p => (p.Price ?? 0m) > 10m),
-                    _ => list
+                    "gt10"  => list.Where(p => (p.Price ?? 0m) > 10m),
+                    _       => list
                 };
             }
 
@@ -259,19 +250,19 @@ namespace MVCAPIFriedBananas.Controllers
             var categoryName = categories.FirstOrDefault(c => c.CatId == p.CatId)?.Name ?? $"Categoria {p.CatId}";
             return new ProductsViewModel
             {
-                ProdId = p.ProdId,
-                Name = p.Name,
-                Description = p.Description ?? string.Empty,
-                Price = p.Price ?? 0m,
-                OriginalPrice = null,
+                ProdId          = p.ProdId,
+                Name            = p.Name,
+                Description     = p.Description ?? string.Empty,
+                Price           = p.Price ?? 0m,
+                OriginalPrice   = null,
                 DiscountPercent = p.DiscountPercent,
-                StockCurrent = p.CurStock,
-                StockMax = p.MaxStock,
-                ImageUrl = p.ImgPath,
-                IsFavorite = p.IsFavorite,
-                Cat_Id = p.CatId,
-                ProductType = p.ProductType,
-                CategoryName = categoryName
+                StockCurrent    = p.CurStock,
+                StockMax        = p.MaxStock,
+                ImageUrl        = p.ImgPath,
+                IsFavorite      = p.IsFavorite,
+                Cat_Id          = p.CatId,
+                ProductType     = p.ProductType,
+                CategoryName    = categoryName
             };
         }
 
@@ -286,9 +277,6 @@ namespace MVCAPIFriedBananas.Controllers
                 .Where(a => !string.IsNullOrWhiteSpace(a));
         }
 
-        // ── Admin CRUD ───────────────────────────────────────────────────
-
-        // GET: Products/Create
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> Create()
@@ -298,7 +286,6 @@ namespace MVCAPIFriedBananas.Controllers
             return View(new ProductsViewModel());
         }
 
-        // POST: Products/Create
         [HttpPost]
         [Authorize]
         [ValidateAntiForgeryToken]
@@ -312,17 +299,17 @@ namespace MVCAPIFriedBananas.Controllers
 
             var product = new Product
             {
-                Name = model.Name,
-                Description = model.Description,
-                Price = model.Price,
-                CatId = model.Cat_Id ?? 0,
-                MaxStock = model.StockMax ?? 0,
-                CurStock = model.StockCurrent ?? 0,
+                Name           = model.Name,
+                Description    = model.Description,
+                Price          = model.Price,
+                CatId          = model.Cat_Id ?? 0,
+                MaxStock       = model.StockMax ?? 0,
+                CurStock       = model.StockCurrent ?? 0,
                 DiscountPercent = model.DiscountPercent ?? 0,
-                ImgPath = model.ImageUrl,
-                ProductType = model.ProductType,
-                IsFavorite = model.IsFavorite,
-                IsActive = true
+                ImgPath        = model.ImageUrl,
+                ProductType    = model.ProductType,
+                IsFavorite     = model.IsFavorite,
+                IsActive       = true
             };
 
             var created = await _products.CreateProductAsync(product);
@@ -333,16 +320,12 @@ namespace MVCAPIFriedBananas.Controllers
                 return View(model);
             }
 
-            // Handle image upload if provided
             if (model.ImageFile != null && model.ImageFile.Length > 0 && created.ProdId > 0)
-            {
                 await _products.UploadProductImageAsync(created.ProdId, model.ImageFile);
-            }
 
             return RedirectToAction(nameof(AdminIndex));
         }
 
-        // GET: Products/Edit/{id}
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> Edit(int id)
@@ -357,7 +340,6 @@ namespace MVCAPIFriedBananas.Controllers
             return View(vm);
         }
 
-        // POST: Products/Edit/{id}
         [HttpPost]
         [Authorize]
         [ValidateAntiForgeryToken]
@@ -372,18 +354,18 @@ namespace MVCAPIFriedBananas.Controllers
 
             var product = new Product
             {
-                ProdId = model.ProdId,
-                Name = model.Name,
-                Description = model.Description,
-                Price = model.Price,
-                CatId = model.Cat_Id ?? 0,
-                MaxStock = model.StockMax ?? 0,
-                CurStock = model.StockCurrent ?? 0,
+                ProdId         = model.ProdId,
+                Name           = model.Name,
+                Description    = model.Description,
+                Price          = model.Price,
+                CatId          = model.Cat_Id ?? 0,
+                MaxStock       = model.StockMax ?? 0,
+                CurStock       = model.StockCurrent ?? 0,
                 DiscountPercent = model.DiscountPercent ?? 0,
-                ImgPath = model.ImageUrl,
-                ProductType = model.ProductType,
-                IsFavorite = model.IsFavorite,
-                IsActive = true
+                ImgPath        = model.ImageUrl,
+                ProductType    = model.ProductType,
+                IsFavorite     = model.IsFavorite,
+                IsActive       = true
             };
 
             var success = await _products.UpdateProductAsync(product);
@@ -394,16 +376,12 @@ namespace MVCAPIFriedBananas.Controllers
                 return View(model);
             }
 
-            // Handle image upload after update
             if (model.ImageFile != null && model.ImageFile.Length > 0)
-            {
                 await _products.UploadProductImageAsync(id, model.ImageFile);
-            }
 
             return RedirectToAction(nameof(AdminIndex));
         }
 
-        // GET: Products/Delete/{id}
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> Delete(int id)
@@ -416,7 +394,6 @@ namespace MVCAPIFriedBananas.Controllers
             return View(vm);
         }
 
-        // POST: Products/Delete/{id}
         [HttpPost, ActionName("Delete")]
         [Authorize]
         [ValidateAntiForgeryToken]

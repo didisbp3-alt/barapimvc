@@ -1,14 +1,12 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using MVCAPIFriedBananas.Services;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// MVC
 builder.Services.AddControllersWithViews();
 
-// HttpClient for API + auth handler
 builder.Services.AddHttpClient("BarEscolaApi", client =>
 {
     client.BaseAddress = new Uri("https://localhost:7234/");
@@ -17,7 +15,6 @@ builder.Services.AddHttpClient("BarEscolaApi", client =>
     ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
 }).AddHttpMessageHandler<ApiAuthHandler>();
 
-// ApiClients
 builder.Services.AddScoped<CategoriesApiClient>();
 builder.Services.AddScoped<ProductsApiClient>();
 builder.Services.AddScoped<UsersApiClient>();
@@ -34,19 +31,18 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-// JWT settings from appsettings
-var validIssuer  = builder.Configuration["Jwt:Authority"]
+var validIssuer   = builder.Configuration["Jwt:Authority"]
     ?? throw new InvalidOperationException("Jwt:Authority not configured");
 var validAudience = builder.Configuration["Jwt:Audience"]
     ?? throw new InvalidOperationException("Jwt:Audience not configured");
-var signingKey = builder.Configuration["Jwt:SigningKey"]
+var signingKey    = builder.Configuration["Jwt:SigningKey"]
     ?? throw new InvalidOperationException("Jwt:SigningKey not configured");
 
 builder.Services.AddAuthentication(options =>
 {
-    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme              = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultAuthenticateScheme  = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme     = JwtBearerDefaults.AuthenticationScheme;
 })
 .AddJwtBearer(options =>
 {
@@ -54,16 +50,15 @@ builder.Services.AddAuthentication(options =>
 
     options.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
+        ValidateIssuer           = true,
+        ValidateAudience         = true,
+        ValidateLifetime         = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = validIssuer,
-        ValidAudience = validAudience,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey))
+        ValidIssuer              = validIssuer,
+        ValidAudience            = validAudience,
+        IssuerSigningKey         = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey))
     };
 
-    // Pull token from session so MVC [Authorize] attributes work
     options.Events = new JwtBearerEvents
     {
         OnMessageReceived = ctx =>
@@ -73,7 +68,6 @@ builder.Services.AddAuthentication(options =>
                 ctx.Token = token;
             return Task.CompletedTask;
         },
-        // Redirect to login page instead of returning 401 for browser page requests
         OnChallenge = ctx =>
         {
             var isAjax = ctx.Request.Headers["X-Requested-With"] == "XMLHttpRequest" ||
@@ -90,8 +84,6 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddAuthorization();
-
-// Auth handler to add Bearer token on outgoing API calls
 builder.Services.AddTransient<ApiAuthHandler>();
 
 var app = builder.Build();
@@ -106,7 +98,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseSession();          // session before auth so we can read the token
+app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 
