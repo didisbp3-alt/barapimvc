@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\MVCAPIFriedBananas.props" />
-</Project>
