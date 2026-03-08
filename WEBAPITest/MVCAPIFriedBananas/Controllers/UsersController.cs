@@ -28,9 +28,9 @@ namespace MVCAPIFriedBananas.Controllers
                 Email = currentUser.Email ?? "Email não definido",
                 Role = currentUser.Role switch
                 {
-                    2 => "Aluno",
+                    0 => "Aluno",
                     1 => "Funcionário / Bar",
-                    0 => "Administrador",
+                    2 => "Administrador",
                     _ => "Utilizador"
                 },
                 Balance = currentUser.Balance ?? 0m

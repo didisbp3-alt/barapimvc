@@ -21,14 +21,17 @@ public class OrderApiClient
     private void Auth()
     {
         var token = _ctx.HttpContext?.Session.GetString("JwtToken");
-        if (string.IsNullOrEmpty(token))
-            throw new InvalidOperationException("JWT token not found in session.");
-        _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        if (!string.IsNullOrEmpty(token))
+            _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
     }
 
     public async Task<OrderDto> GetCartAsync()
     {
         Auth();
+        // If not authenticated, return empty cart
+        if (_ctx.HttpContext?.Session.GetString("JwtToken") == null)
+            return new OrderDto { Items = Array.Empty<OrderItemDto>(), Subtotal = 0m, Total = 0m };
+
         var res = await _http.GetAsync(OrderGetRoute);
 
         if (res.StatusCode == HttpStatusCode.NotFound ||
@@ -52,20 +55,32 @@ public class OrderApiClient
     {
         Auth();
         var res = await _http.PostAsJsonAsync(OrderAddRoute, new { productId, qty });
-        res.EnsureSuccessStatusCode();
+        if (!res.IsSuccessStatusCode)
+        {
+            var body = await res.Content.ReadAsStringAsync();
+            throw new InvalidOperationException($"Add item failed: {(int)res.StatusCode}. Body: {body}");
+        }
     }
 
     public async Task UpdateItemAsync(int productId, int qty)
     {
         Auth();
         var res = await _http.PostAsJsonAsync(OrderUpdateRoute, new { productId, qty });
-        res.EnsureSuccessStatusCode();
+        if (!res.IsSuccessStatusCode)
+        {
+            var body = await res.Content.ReadAsStringAsync();
+            throw new InvalidOperationException($"Update item failed: {(int)res.StatusCode}. Body: {body}");
+        }
     }
 
     public async Task RemoveItemAsync(int productId)
     {
         Auth();
         var res = await _http.PostAsJsonAsync(OrderRemoveRoute, new { productId });
-        res.EnsureSuccessStatusCode();
+        if (!res.IsSuccessStatusCode)
+        {
+            var body = await res.Content.ReadAsStringAsync();
+            throw new InvalidOperationException($"Remove item failed: {(int)res.StatusCode}. Body: {body}");
+        }
     }
 }

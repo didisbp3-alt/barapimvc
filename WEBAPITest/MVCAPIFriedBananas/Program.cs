@@ -35,9 +35,12 @@ builder.Services.AddSession(options =>
 });
 
 // JWT settings from appsettings
-var authority = builder.Configuration["Jwt:Authority"];
-var audience  = builder.Configuration["Jwt:Audience"];
-var signingKey = builder.Configuration["Jwt:SigningKey"]; // optional if you validate a symmetric key
+var validIssuer  = builder.Configuration["Jwt:Authority"]
+    ?? throw new InvalidOperationException("Jwt:Authority not configured");
+var validAudience = builder.Configuration["Jwt:Audience"]
+    ?? throw new InvalidOperationException("Jwt:Audience not configured");
+var signingKey = builder.Configuration["Jwt:SigningKey"]
+    ?? throw new InvalidOperationException("Jwt:SigningKey not configured");
 
 builder.Services.AddAuthentication(options =>
 {
@@ -47,9 +50,7 @@ builder.Services.AddAuthentication(options =>
 })
 .AddJwtBearer(options =>
 {
-    options.Authority = authority;
-    options.Audience  = audience;
-    options.RequireHttpsMetadata = false; // set true in production with HTTPS issuer
+    options.RequireHttpsMetadata = false;
 
     options.TokenValidationParameters = new TokenValidationParameters
     {
@@ -57,13 +58,12 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        // If using symmetric key validation:
-        IssuerSigningKey = !string.IsNullOrEmpty(signingKey)
-            ? new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey))
-            : null
+        ValidIssuer = validIssuer,
+        ValidAudience = validAudience,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey))
     };
 
-    // Pull token from session so MVC requests are authenticated
+    // Pull token from session so MVC [Authorize] attributes work
     options.Events = new JwtBearerEvents
     {
         OnMessageReceived = ctx =>

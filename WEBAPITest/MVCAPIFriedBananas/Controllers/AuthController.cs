@@ -85,6 +85,8 @@ namespace MVCAPIFriedBananas.Controllers
             }
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Logout()
         {
             HttpContext.Session.Remove("JwtToken");
