@@ -1,0 +1,524 @@
+@{
+    ViewData["Title"] = "BarEscola — Bem-vindo";
+}
+
+@section Styles {
+<style>
+/* ===== HOME PAGE ===== */
+.home-page {
+    padding: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* HERO */
+.home-hero {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #e87600 0%, #ffb14e 50%, #ff6b35 100%);
+}
+
+.home-hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+    mix-blend-mode: overlay;
+}
+
+.home-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 3rem 3.5rem;
+    max-width: 620px;
+}
+
+.home-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.22);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: #fff;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(4px);
+}
+
+.home-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.15);
+}
+
+.home-hero p {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.90);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.home-hero-actions {
+    display: flex;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+}
+
+.btn-hero-primary {
+    background: #fff;
+    color: #e87600;
+    border-radius: 999px;
+    padding: 0.85rem 2rem;
+    font-weight: 800;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 180ms ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+}
+
+.btn-hero-primary:hover {
+    background: #fff8f0;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.22);
+    transform: translateY(-2px);
+    color: #e87600;
+}
+
+.btn-hero-ghost {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.60);
+    border-radius: 999px;
+    padding: 0.85rem 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 180ms ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-hero-ghost:hover {
+    background: rgba(255,255,255,0.18);
+    border-color: rgba(255,255,255,0.85);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.home-hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.25);
+}
+
+.hero-stat {
+    text-align: left;
+}
+
+.hero-stat-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+}
+
+.hero-stat-label {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.80);
+    margin-top: 0.2rem;
+}
+
+/* HOW IT WORKS */
+.home-section {
+    margin-bottom: 3rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-label {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(232,118,0,0.12), rgba(255,177,78,0.10));
+    color: #e87600;
+    border: 1px solid rgba(232,118,0,0.20);
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    font-size: 1rem;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* STEPS */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.step-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 200ms ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(232,118,0,0.25);
+}
+
+.step-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.step-number {
+    display: inline-flex;
+    width: 1.75rem;
+    height: 1.75rem;
+    background: linear-gradient(135deg, #e87600, #ffb14e);
+    color: #fff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+}
+
+.step-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.step-desc {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* CATEGORIES GRID */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.category-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    padding: 1.75rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 200ms ease;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--brand);
+    background: var(--card-hover);
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.category-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* INFO BANNER */
+.info-banner {
+    background: linear-gradient(135deg, #e87600 0%, #ffb14e 100%);
+    border-radius: 1.5rem;
+    padding: 3rem 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 32px rgba(232,118,0,0.30);
+}
+
+.info-banner-text h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.info-banner-text p {
+    color: rgba(255,255,255,0.88);
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0;
+}
+
+/* TODAY MENU PREVIEW */
+.today-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.menu-preview-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 200ms ease;
+}
+
+.menu-preview-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.menu-type-badge {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.menu-type-badge.normal {
+    background: rgba(232,118,0,0.12);
+    color: #e87600;
+}
+
+.menu-type-badge.veg {
+    background: rgba(34,197,94,0.12);
+    color: #15803d;
+}
+
+.menu-preview-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+}
+
+.menu-preview-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.menu-item-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.menu-item-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--brand);
+    flex-shrink: 0;
+}
+
+@@media (max-width: 768px) {
+    .home-hero {
+        min-height: 380px;
+    }
+
+    .home-hero-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .home-hero h1 {
+        font-size: 2rem;
+    }
+
+    .home-hero-stats {
+        gap: 1.25rem;
+    }
+
+    .info-banner {
+        padding: 2rem 1.5rem;
+    }
+}
+</style>
+}
+
+<div class="home-page">
+
+    <!-- HERO SECTION -->
+    <section class="home-hero">
+        <img class="home-hero-bg" src="https://images.unsplash.com/photo-1567521464027-f127ff144326?auto=format&fit=crop&w=1600&q=80" alt="BarEscola" />
+        <div class="home-hero-content">
+            <div class="home-hero-badge">
+                🟢 Aberto agora &nbsp;·&nbsp; Produtos frescos
+            </div>
+            <h1>Bem-vindo ao BarEscola</h1>
+            <p>O teu bar e cantina favorito. Descobre os nossos produtos frescos, menus diários e reserva o teu almoço em segundos.</p>
+            <div class="home-hero-actions">
+                <a class="btn-hero-primary" href="@Url.Action("Index", "Products")">
+                    🛒 Ver Produtos
+                </a>
+                <a class="btn-hero-ghost" href="@Url.Action("Index", "Menu")">
+                    📋 Ver Menus
+                </a>
+            </div>
+            <div class="home-hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number">20+</div>
+                    <div class="hero-stat-label">Produtos frescos</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">5 dias</div>
+                    <div class="hero-stat-label">Menus semanais</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">Rápido</div>
+                    <div class="hero-stat-label">Pedido fácil</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="home-section">
+        <div class="section-header">
+            <div class="section-label">Categorias</div>
+            <h2 class="section-title">O que tens fome?</h2>
+            <p class="section-subtitle">Escolhe pela categoria que mais te apetece hoje.</p>
+        </div>
+        <div class="categories-grid">
+            <a class="category-card" href="@Url.Action("Index", "Products", new { SelectedCategory = "Bebidas" })">
+                <span class="category-icon">🥤</span>
+                <span class="category-name">Bebidas</span>
+            </a>
+            <a class="category-card" href="@Url.Action("Index", "Products", new { SelectedCategory = "Sandes" })">
+                <span class="category-icon">🥪</span>
+                <span class="category-name">Sandes</span>
+            </a>
+            <a class="category-card" href="@Url.Action("Index", "Products", new { SelectedCategory = "Snacks" })">
+                <span class="category-icon">🍟</span>
+                <span class="category-name">Snacks</span>
+            </a>
+            <a class="category-card" href="@Url.Action("Index", "Products", new { SelectedCategory = "Sobremesas" })">
+                <span class="category-icon">🍰</span>
+                <span class="category-name">Sobremesas</span>
+            </a>
+            <a class="category-card" href="@Url.Action("Index", "Products", new { SelectedCategory = "Frutas" })">
+                <span class="category-icon">🍎</span>
+                <span class="category-name">Frutas</span>
+            </a>
+            <a class="category-card" href="@Url.Action("Index", "Products")">
+                <span class="category-icon">🍽️</span>
+                <span class="category-name">Ver tudo</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="home-section">
+        <div class="section-header">
+            <div class="section-label">Como funciona</div>
+            <h2 class="section-title">Em 3 passos simples</h2>
+            <p class="section-subtitle">Pedidos rápidos, pagamento fácil, produto pronto.</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card">
+                <span class="step-number">1</span>
+                <span class="step-icon">🔍</span>
+                <div class="step-title">Escolhe o que queres</div>
+                <p class="step-desc">Navega pelos nossos produtos e menus diários. Filtra por categoria ou preço.</p>
+            </div>
+            <div class="step-card">
+                <span class="step-number">2</span>
+                <span class="step-icon">🛒</span>
+                <div class="step-title">Adiciona ao carrinho</div>
+                <p class="step-desc">Adiciona os teus produtos favoritos ao carrinho com um clique.</p>
+            </div>
+            <div class="step-card">
+                <span class="step-number">3</span>
+                <span class="step-icon">✅</span>
+                <div class="step-title">Finaliza o pedido</div>
+                <p class="step-desc">Confirma a encomenda e levanta no balcão. Sem filas desnecessárias!</p>
+            </div>
+            <div class="step-card">
+                <span class="step-number">4</span>
+                <span class="step-icon">📅</span>
+                <div class="step-title">Reserva o almoço</div>
+                <p class="step-desc">Garante o teu lugar na cantina com antecedência. Sem surpresas!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO BANNER -->
+    <div class="info-banner">
+        <div class="info-banner-text">
+            <h2>🍽️ Reserva o teu almoço de hoje!</h2>
+            <p>Garante o teu lugar na cantina e escolhe o menu que preferes antes que esgotem as vagas. Rápido e fácil.</p>
+        </div>
+        <div>
+            <a class="btn-hero-primary" href="@Url.Action("Index", "Menu")">
+                📋 Ver Menu da Semana
+            </a>
+        </div>
+    </div>
+
+</div>

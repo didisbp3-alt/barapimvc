@@ -1,0 +1,133 @@
+﻿@model IEnumerable<MVCAPIFriedBananas.Models.Category>
+
+@{
+    ViewData["Title"] = "Categorias";
+}
+
+<h1>Categorias</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Nova Categoria</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CatId</td>
+                <td id="name-@item.CatId">@item.Name</td>
+                <td>
+                    <!-- Edit via fetch/JS -->
+                    <button type="button" class="btn btn-warning btn-sm" onclick="openEdit(@item.CatId)">
+                        Editar fetch
+                    </button>
+                    <!-- Edit clássico via MVC -->
+                    <a asp-action="Edit" asp-route-id="@item.CatId" class="btn btn-warning btn-sm">
+                        Editar
+                    </a>
+                    <!-- Delete clássico via MVC -->
+                    <a asp-action="Delete" asp-route-id="@item.CatId" class="btn btn-danger btn-sm">
+                        Eliminar
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Painel simples de edição via fetch -->
+<div id="edit-panel" style="display:none; margin-top:20px;">
+    <h3>Editar Categoria (via fetch)</h3>
+    <input type="hidden" id="edit-id" />
+    <div class="form-group">
+        <label for="edit-name">Nome</label>
+        <input type="text" id="edit-name" class="form-control" /> <!-- corrigido o <inp -->
+    </div>
+    <br />
+    <button type="button" class="btn btn-primary" onclick="saveEdit()">Guardar</button>
+    <button type="button" class="btn btn-secondary" onclick="closeEdit()">Cancelar</button>
+</div>
+
+@section Scripts {
+    <script>
+        // URL base da API - ajuste a porta se necessário (confira no console da API)
+        const apiBaseUrl = "https://localhost:7234/api/Categories"; // ou 7193, etc.
+
+        async function openEdit(id) {
+            try {
+                const response = await fetch(`${apiBaseUrl}/${id}`, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + (localStorage.getItem('token') || '') // se usar localStorage
+                        // Se usar sessão/cookie, pode omitir header aqui se o browser enviar cookie automaticamente
+                    }
+                });
+
+                if (!response.ok) {
+                    alert("Erro ao carregar categoria: " + response.status);
+                    return;
+                }
+
+                const category = await response.json();
+
+                document.getElementById("edit-id").value = category.catId;   // camelCase do JSON
+                document.getElementById("edit-name").value = category.name;
+                document.getElementById("edit-panel").style.display = "block";
+            } catch (err) {
+                console.error(err);
+                alert("Erro ao comunicar com a API.");
+            }
+        }
+
+        function closeEdit() {
+            document.getElementById("edit-panel").style.display = "none";
+        }
+
+        async function saveEdit() {
+            const id = document.getElementById("edit-id").value;
+            const name = document.getElementById("edit-name").value;
+
+            const body = {
+                catId: parseInt(id),   // camelCase para matching com API
+                name: name
+            };
+
+            try {
+                const response = await fetch(`${apiBaseUrl}/${id}`, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                        'Authorization': 'Bearer ' + (localStorage.getItem('token') || '')
+                    },
+                    body: JSON.stringify(body)
+                });
+
+                if (!response.ok) {
+                    const msg = await response.text();
+                    console.error(msg);
+                    alert("Erro ao atualizar: " + msg);
+                    return;
+                }
+
+                // Atualiza o nome na tabela sem recarregar a página
+                const nameCell = document.getElementById(`name-${id}`);
+                if (nameCell) {
+                    nameCell.textContent = name;
+                }
+
+                closeEdit();
+            } catch (err) {
+                console.error(err);
+                alert("Erro ao comunicar com a API.");
+            }
+        }
+    </script>
+}

@@ -1,0 +1,120 @@
+@model IEnumerable<DTO_MVCAPIContracts.Contracts.LunchBookingDto>
+@{
+    ViewData["Title"] = "As minhas reservas";
+    var culture = System.Globalization.CultureInfo.GetCultureInfo("pt-PT");
+}
+
+@section Styles {
+<style>
+.bookings-page { max-width: 700px; margin: 0 auto; padding: 0 0 3rem; }
+.bookings-header { margin-bottom: 1.5rem; }
+.bookings-header h1 { font-size: 1.75rem; font-weight: 800; color: var(--text,#1a1a2e); }
+.bookings-header p { color: var(--text-muted,#6b7280); }
+
+.booking-card {
+    background: var(--card,#fff);
+    border: 1px solid var(--border,rgba(232,118,0,0.15));
+    border-radius: 1.125rem;
+    padding: 1.125rem 1.25rem;
+    margin-bottom: 0.875rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.booking-info { display: flex; flex-direction: column; gap: 0.2rem; }
+.booking-date { font-size: 1rem; font-weight: 700; color: var(--text,#1a1a2e); }
+.booking-meta { font-size: 0.82rem; color: var(--text-muted,#6b7280); }
+
+.btn-cancel {
+    height: 2.25rem; padding: 0 0.875rem;
+    border: 1.5px solid rgba(220,53,69,0.35); border-radius: 0.625rem;
+    background: transparent; color: #dc3545;
+    font-size: 0.82rem; font-weight: 700; cursor: pointer;
+    transition: all 180ms ease; white-space: nowrap;
+    display: inline-flex; align-items: center; gap: 0.35rem;
+}
+.btn-cancel:hover { background: rgba(220,53,69,0.08); border-color: #dc3545; }
+
+.booking-empty {
+    text-align: center; padding: 3rem 2rem;
+    background: var(--card,#fff);
+    border: 1px solid var(--border,rgba(232,118,0,0.15));
+    border-radius: 1.25rem;
+}
+.booking-empty-icon { font-size: 3.5rem; opacity: 0.5; margin-bottom: 0.75rem; }
+.booking-empty h3 { font-size: 1.1rem; font-weight: 700; color: var(--text,#1a1a2e); margin-bottom: 0.5rem; }
+.booking-empty p { color: var(--text-muted,#6b7280); margin-bottom: 1.25rem; }
+
+.btn-primary-link {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    height: 2.75rem; padding: 0 1.5rem;
+    background: linear-gradient(135deg, #e87600, #ffb14e);
+    color: #fff; border: none; border-radius: 0.875rem;
+    font-size: 0.9rem; font-weight: 700; text-decoration: none;
+    box-shadow: 0 4px 12px rgba(232,118,0,0.30);
+    transition: all 180ms ease;
+}
+.btn-primary-link:hover { box-shadow: 0 6px 18px rgba(232,118,0,0.45); transform: translateY(-1px); }
+
+.menu-alert { border-radius: 0.875rem; padding: 0.875rem 1.25rem; margin-bottom: 1.25rem; font-weight: 500; }
+.menu-alert.success { background: rgba(34,197,94,0.10); color: #15803d; border: 1px solid rgba(34,197,94,0.20); }
+.menu-alert.danger { background: rgba(239,68,68,0.10); color: #dc2626; border: 1px solid rgba(239,68,68,0.20); }
+</style>
+}
+
+<div class="bookings-page">
+    <div class="bookings-header">
+        <h1>📋 As minhas reservas</h1>
+        <p>Aqui estão todas as tuas reservas de almoço.</p>
+    </div>
+
+    @if (TempData["BookingMessage"] != null)
+    {
+        var ok = TempData["BookingSuccess"] as bool? ?? false;
+        <div class="menu-alert @(ok ? "success" : "danger")">
+            @(ok ? "✅" : "⚠️") @TempData["BookingMessage"]
+        </div>
+    }
+
+    @if (!Model.Any())
+    {
+        <div class="booking-empty">
+            <div class="booking-empty-icon">📭</div>
+            <h3>Nenhuma reserva encontrada</h3>
+            <p>Ainda não fizeste nenhuma reserva de almoço.</p>
+            <a href="@Url.Action("Index", "Menu")" class="btn-primary-link">
+                🍽️ Ver menus
+            </a>
+        </div>
+    }
+    else
+    {
+        @foreach (var b in Model.OrderByDescending(x => x.Date))
+        {
+            <div class="booking-card">
+                <div class="booking-info">
+                    <span class="booking-date">@b.Date.ToString("dddd, dd MMM yyyy", culture)</span>
+                    <span class="booking-meta">Reserva #@b.Id · criada em @b.CreatedAt.ToString("dd/MM/yyyy HH:mm")</span>
+                </div>
+                <form method="post" asp-controller="Booking" asp-action="Cancel" class="m-0">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="bookingId" value="@b.Id" />
+                    <input type="hidden" name="returnUrl" value="/Booking" />
+                    <button type="submit" class="btn-cancel"
+                            onclick="return confirm('Cancelar esta reserva?')">
+                        🗑️ Cancelar
+                    </button>
+                </form>
+            </div>
+        }
+
+        <div style="margin-top:1.25rem; text-align:right;">
+            <a href="@Url.Action("Index", "Menu")" class="btn-primary-link">
+                🍽️ Ver menus da semana
+            </a>
+        </div>
+    }
+</div>

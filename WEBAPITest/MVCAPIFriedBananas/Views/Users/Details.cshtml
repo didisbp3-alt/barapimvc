@@ -1,0 +1,47 @@
+﻿@model MVCAPIFriedBananas.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "O Meu Perfil";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3 class="mb-0">Bem-vindo, @Model.FullName!</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-4 fw-bold">Nome Completo:</div>
+                        <div class="col-sm-8">@Model.FullName</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-4 fw-bold">Email:</div>
+                        <div class="col-sm-8">@Model.Email</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-4 fw-bold">Tipo de Utilizador:</div>
+                        <div class="col-sm-8">
+                            <span class="badge bg-info">@Model.Role</span>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-4 fw-bold">Saldo Atual:</div>
+                        <div class="col-sm-8">
+                            <strong>@Model.Balance.ToString("C2")</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary me-2">Voltar ao Início</a>
+                    <a asp-controller="Auth" asp-action="Logout" class="btn btn-outline-danger">Terminar Sessão</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

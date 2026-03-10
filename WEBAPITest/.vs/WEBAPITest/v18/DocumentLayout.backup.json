@@ -1,0 +1,1522 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\dto_mvcapicontracts\\contracts\\productsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|solutionrelative:dto_mvcapicontracts\\contracts\\productsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\services\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\services\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\services\\operationresultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\services\\operationresultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\dto_mvcapicontracts\\contracts\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|solutionrelative:dto_mvcapicontracts\\contracts\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\dto_mvcapicontracts\\contracts\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|solutionrelative:dto_mvcapicontracts\\contracts\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\services\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\services\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\services\\ilunchbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\services\\ilunchbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\dto_mvcapicontracts\\contracts\\menudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|solutionrelative:dto_mvcapicontracts\\contracts\\menudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\dto_mvcapicontracts\\contracts\\lunchbookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|solutionrelative:dto_mvcapicontracts\\contracts\\lunchbookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\mvcapifriedbananas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\mvcapifriedbananas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\shared\\_productcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\shared\\_productcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\models\\currentuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\models\\currentuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\services\\usersapicliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\services\\usersapicliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\services\\categoriesapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\services\\categoriesapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\webapitest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\webapitest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\products\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\products\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\viewmodels\\productsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\viewmodels\\productsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\dto_mvcapicontracts\\contracts\\menusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|solutionrelative:dto_mvcapicontracts\\contracts\\menusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\dto_mvcapicontracts\\contracts\\categoriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA69BE6F-B653-4978-93D2-04001F30EF67}|DTO_MVCAPIContracts\\DTO_MVCAPIContracts.csproj|solutionrelative:dto_mvcapicontracts\\contracts\\categoriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\webapitest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\webapitest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\models\\lunchbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\models\\lunchbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\data\\diogoportela_schoolbarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\data\\diogoportela_schoolbarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\products\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\products\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\menuadmin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\menuadmin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\menu\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\menu\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\services\\productsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\services\\productsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\services\\productsapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\services\\productsapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\services\\inmemoryproductsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\services\\inmemoryproductsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\models\\lunchbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\models\\lunchbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\controllers\\menuadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\controllers\\menuadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\controllers\\barcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\controllers\\barcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\menuadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\menuadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\menuadmin\\editday.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\menuadmin\\editday.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\menuadmin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\menuadmin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\menuadmin\\deleteday.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\menuadmin\\deleteday.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\menuadmin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\menuadmin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\menuadmin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\menuadmin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\views\\menuadmin\\createday.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\views\\menuadmin\\createday.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\webapitest\\webapitest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C9A48CB5-82CB-4CBF-834A-DC01F000FB1D}|WEBAPITest\\WEBAPITest.csproj|solutionrelative:webapitest\\webapitest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|c:\\users\\nmbba\\downloads\\webapitest\\webapitest\\mvcapifriedbananas\\mvcapifriedbananas.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{E35322FB-FB8E-493C-8D81-BF8166B0622D}|MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj|solutionrelative:mvcapifriedbananas\\mvcapifriedbananas.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IOrdersService.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Services\\IOrdersService.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Services\\IOrdersService.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Services\\IOrdersService.cs",
+              "RelativeToolTip": "WEBAPITest\\Services\\IOrdersService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T19:14:43.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsDto.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\ProductsDto.cs",
+              "RelativeDocumentMoniker": "DTO_MVCAPIContracts\\Contracts\\ProductsDto.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\ProductsDto.cs",
+              "RelativeToolTip": "DTO_MVCAPIContracts\\Contracts\\ProductsDto.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADgvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OperationResultT.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Services\\OperationResultT.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Services\\OperationResultT.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Services\\OperationResultT.cs",
+              "RelativeToolTip": "WEBAPITest\\Services\\OperationResultT.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T19:14:36.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\OrderDto.cs",
+              "RelativeDocumentMoniker": "DTO_MVCAPIContracts\\Contracts\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\OrderDto.cs",
+              "RelativeToolTip": "DTO_MVCAPIContracts\\Contracts\\OrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T19:14:32.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "DTO_MVCAPIContracts\\Contracts\\OrderItemDto.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\OrderItemDto.cs",
+              "RelativeToolTip": "DTO_MVCAPIContracts\\Contracts\\OrderItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T19:14:26.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ILunchBookingService.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Services\\ILunchBookingService.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Services\\ILunchBookingService.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Services\\ILunchBookingService.cs",
+              "RelativeToolTip": "WEBAPITest\\Services\\ILunchBookingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T19:11:43.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OperationResult.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Services\\OperationResult.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Services\\OperationResult.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Services\\OperationResult.cs",
+              "RelativeToolTip": "WEBAPITest\\Services\\OperationResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T19:11:40.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MenuDto.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\MenuDto.cs",
+              "RelativeDocumentMoniker": "DTO_MVCAPIContracts\\Contracts\\MenuDto.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\MenuDto.cs",
+              "RelativeToolTip": "DTO_MVCAPIContracts\\Contracts\\MenuDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T19:11:37.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LunchBookingDto.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\LunchBookingDto.cs",
+              "RelativeDocumentMoniker": "DTO_MVCAPIContracts\\Contracts\\LunchBookingDto.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\LunchBookingDto.cs",
+              "RelativeToolTip": "DTO_MVCAPIContracts\\Contracts\\LunchBookingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T19:11:33.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ProductCard.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Shared\\_ProductCard.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Shared\\_ProductCard.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Shared\\_ProductCard.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Shared\\_ProductCard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "WEBAPITest\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MVCAPIFriedBananas.csproj",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj",
+              "RelativeToolTip": "MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-12T18:57:33.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Models\\UserViewModel.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\UserViewModel.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Models\\UserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CurrentUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\CurrentUserDto.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Models\\CurrentUserDto.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\CurrentUserDto.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Models\\CurrentUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UsersApiCliente.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\UsersApiCliente.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Services\\UsersApiCliente.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\UsersApiCliente.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Services\\UsersApiCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CategoriesApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\CategoriesApiClient.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Services\\CategoriesApiClient.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\CategoriesApiClient.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Services\\CategoriesApiClient.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvz4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WEBAPITest\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\appsettings.json",
+              "RelativeDocumentMoniker": "WEBAPITest\\appsettings.json",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\appsettings.json",
+              "RelativeToolTip": "WEBAPITest\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-12T18:57:33.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "WEBAPITest.csproj",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\WEBAPITest.csproj",
+              "RelativeDocumentMoniker": "WEBAPITest\\WEBAPITest.csproj",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\WEBAPITest.csproj",
+              "RelativeToolTip": "WEBAPITest\\WEBAPITest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-12T18:57:33.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\Orders.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Models\\Orders.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\Orders.cs",
+              "RelativeToolTip": "WEBAPITest\\Models\\Orders.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAjwHIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Users\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Users\\Edit.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Users\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Users\\Details.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Users\\Details.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Users\\Details.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Users\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\OrderItem.cs",
+              "RelativeToolTip": "WEBAPITest\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AdminIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\AdminIndex.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Products\\AdminIndex.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\AdminIndex.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Products\\AdminIndex.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProductsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\ViewModels\\ProductsViewModel.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\ViewModels\\ProductsViewModel.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\ViewModels\\ProductsViewModel.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\ViewModels\\ProductsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\Users.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\Users.cs",
+              "RelativeToolTip": "WEBAPITest\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\Order.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\Category.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\AuthService.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "MenusDto.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\MenusDto.cs",
+              "RelativeDocumentMoniker": "DTO_MVCAPIContracts\\Contracts\\MenusDto.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\MenusDto.cs",
+              "RelativeToolTip": "DTO_MVCAPIContracts\\Contracts\\MenusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "WEBAPITest.http",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\WEBAPITest.http",
+              "RelativeDocumentMoniker": "WEBAPITest\\WEBAPITest.http",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\WEBAPITest.http",
+              "RelativeToolTip": "WEBAPITest\\WEBAPITest.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-01-12T18:57:33.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "efpt.config.json",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\efpt.config.json",
+              "RelativeDocumentMoniker": "WEBAPITest\\efpt.config.json",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\efpt.config.json",
+              "RelativeToolTip": "WEBAPITest\\efpt.config.json",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-12T18:57:33.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\Products.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Models\\Products.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\Products.cs",
+              "RelativeToolTip": "WEBAPITest\\Models\\Products.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\Menu.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Models\\Menu.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\Menu.cs",
+              "RelativeToolTip": "WEBAPITest\\Models\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CategoriesDto.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\CategoriesDto.cs",
+              "RelativeDocumentMoniker": "DTO_MVCAPIContracts\\Contracts\\CategoriesDto.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\DTO_MVCAPIContracts\\Contracts\\CategoriesDto.cs",
+              "RelativeToolTip": "DTO_MVCAPIContracts\\Contracts\\CategoriesDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "LunchBooking.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\LunchBooking.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Models\\LunchBooking.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\LunchBooking.cs",
+              "RelativeToolTip": "WEBAPITest\\Models\\LunchBooking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\WeatherForecast.cs",
+              "RelativeToolTip": "WEBAPITest\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\LoginModel.cs",
+              "RelativeToolTip": "WEBAPITest\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Models\\Category.cs",
+              "RelativeToolTip": "WEBAPITest\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "diogoportela_SchoolBarContext.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Data\\diogoportela_SchoolBarContext.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Data\\diogoportela_SchoolBarContext.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Data\\diogoportela_SchoolBarContext.cs",
+              "RelativeToolTip": "WEBAPITest\\Data\\diogoportela_SchoolBarContext.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAABBwKcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "WEBAPITest\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "WEBAPITest\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "WEBAPITest\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WEBAPITest\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WEBAPITest\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-12T18:57:33.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Products\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Products\\Create.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Products\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Cart.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Products\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Cart.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Products\\Cart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\MenuAdmin\\Create.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\Create.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\MenuAdmin\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "AdminIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Menu\\AdminIndex.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Menu\\AdminIndex.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Menu\\AdminIndex.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Menu\\AdminIndex.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Categories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Categories\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Categories\\Delete.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Categories\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Categories\\Delete.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Categories\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Categories\\Create.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Categories\\Create.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Categories\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Booking\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Booking\\Create.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Booking\\Create.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Booking\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\UserService.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ProductsService.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\ProductsService.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Services\\ProductsService.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\ProductsService.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Services\\ProductsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ProductsApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\ProductsApiClient.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Services\\ProductsApiClient.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\ProductsApiClient.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Services\\ProductsApiClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\MenuService.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Services\\MenuService.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\MenuService.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Services\\MenuService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "InMemoryProductsService.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\InMemoryProductsService.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Services\\InMemoryProductsService.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\InMemoryProductsService.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Services\\InMemoryProductsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\BookingService.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Services\\BookingService.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Services\\BookingService.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Services\\BookingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\Menu.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Models\\Menu.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\Menu.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Models\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "LunchBooking.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\LunchBooking.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Models\\LunchBooking.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\LunchBooking.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Models\\LunchBooking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\LoginModel.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "MenuAdminController.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\MenuAdminController.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Controllers\\MenuAdminController.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\MenuAdminController.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Controllers\\MenuAdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "BarController.cs",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\BarController.cs",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Controllers\\BarController.cs",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Controllers\\BarController.cs",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Controllers\\BarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T18:57:33.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Products\\Details.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Products\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\Products\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\Products\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\MenuAdmin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\Index.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\MenuAdmin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "EditDay.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\EditDay.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\MenuAdmin\\EditDay.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\EditDay.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\MenuAdmin\\EditDay.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\MenuAdmin\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\Edit.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\MenuAdmin\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "DeleteDay.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\DeleteDay.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\MenuAdmin\\DeleteDay.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\DeleteDay.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\MenuAdmin\\DeleteDay.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\Details.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\MenuAdmin\\Details.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\Details.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\MenuAdmin\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\Delete.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\MenuAdmin\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\Delete.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\MenuAdmin\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "CreateDay.cshtml",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\CreateDay.cshtml",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Views\\MenuAdmin\\CreateDay.cshtml",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Views\\MenuAdmin\\CreateDay.cshtml",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Views\\MenuAdmin\\CreateDay.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T18:57:33.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\appsettings.json",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\appsettings.json",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\appsettings.json",
+              "RelativeToolTip": "MVCAPIFriedBananas\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-12T18:57:34.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "WEBAPITest",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\WEBAPITest.csproj",
+              "RelativeDocumentMoniker": "WEBAPITest\\WEBAPITest.csproj",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\WEBAPITest\\WEBAPITest.csproj",
+              "RelativeToolTip": "WEBAPITest\\WEBAPITest.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-12T18:57:34.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MVCAPIFriedBananas\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-12T18:57:34.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "MVCAPIFriedBananas",
+              "DocumentMoniker": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj",
+              "RelativeDocumentMoniker": "MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj",
+              "ToolTip": "C:\\Users\\nmbba\\Downloads\\WEBAPITest\\WEBAPITest\\MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj",
+              "RelativeToolTip": "MVCAPIFriedBananas\\MVCAPIFriedBananas.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-12T18:57:34.023Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

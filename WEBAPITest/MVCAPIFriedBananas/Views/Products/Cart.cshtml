@@ -1,0 +1,68 @@
+﻿@model MVCAPIFriedBananas.Views.ViewModels.OrderViewModel
+@using System.Globalization
+@{
+    ViewData["Title"] = "Carrinho";
+    var culture = CultureInfo.GetCultureInfo("pt-PT");
+}
+
+<h2 class="mb-4">Carrinho</h2>
+
+@if (Model?.Items == null || !Model.Items.Any())
+{
+    <div class="alert alert-info">O carrinho está vazio.</div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th style="width:120px;">Preço</th>
+                    <th style="width:140px;">Quantidade</th>
+                    <th style="width:140px;">Total</th>
+                    <th style="width:80px;"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Items)
+                {
+                    <tr>
+                        <td><div class="fw-semibold">@item.Name</div></td>
+                        <td>@item.UnitPrice.ToString("C2", culture)</td>
+                        <td>
+                            <form asp-action="Update" asp-controller="Cart" method="post" class="d-flex align-items-center gap-2">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@item.ProductId" />
+                                <input type="number" name="qty" value="@item.Quantity" min="0" class="form-control form-control-sm" style="width:80px;" />
+                                <button type="submit" class="btn btn-sm btn-outline-primary">Atualizar</button>
+                            </form>
+                        </td>
+                        <td>@(item.LineTotal.ToString("C2", culture))</td>
+                        <td>
+                            <form asp-action="Remove" asp-controller="Cart" method="post" class="m-0">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@item.ProductId" />
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Remover</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <div class="card p-3" style="min-width: 280px;">
+            <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted">Subtotal</span>
+                <span>@Model.Subtotal.ToString("C2", culture)</span>
+            </div>
+            <div class="d-flex justify-content-between fw-bold">
+                <span>Total</span>
+                <span>@Model.Total.ToString("C2", culture)</span>
+            </div>
+            <button class="btn btn-success w-100 mt-3" type="button" disabled>Checkout (em breve)</button>
+        </div>
+    </div>
+}

@@ -1,0 +1,46 @@
+@model MVCAPIFriedBananas.Views.ViewModels.ProductsPageViewModel
+
+@{
+    ViewData["Title"] = "Admin - Produtos";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/products.css" />
+}
+
+<div class="products-page">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="mb-0">Produtos (Admin)</h2>
+        <a class="btn btn-primary btn-small" asp-action="Create">Criar Produto</a>
+    </div>
+
+    <div class="cards">
+        @foreach (var p in Model.Items)
+        {
+            <div class="card product-card">
+                <div class="product-image">
+                    <img src="@(string.IsNullOrWhiteSpace(p.ImageUrl) ? "https://via.placeholder.com/400x260?text=Produto" : p.ImageUrl)" alt="@p.Name" />
+                </div>
+                <div class="product-body">
+                    <div class="meta">
+                        <strong class="accent">@p.CategoryName</strong>
+                        <span class="price">@p.Price.ToString("C")</span>
+                    </div>
+                    <h3>@p.Name</h3>
+                    <p class="muted">@p.Description</p>
+                    <div class="tags">
+                        @if (p.StockCurrent.HasValue && p.StockMax.HasValue)
+                        {
+                            <span class="tag">Stock @p.StockCurrent/@p.StockMax</span>
+                        }
+                    </div>
+                    <div class="row gap-1" style="flex-direction:row;">
+                        <a class="btn btn-warning btn-small" asp-action="Edit" asp-route-id="@p.ProdId">✏️ Editar</a>
+                        <a class="btn btn-info btn-small text-white" asp-action="Details" asp-route-id="@p.ProdId">Detalhes</a>
+                        <a class="btn btn-danger btn-small" asp-action="Delete" asp-route-id="@p.ProdId">🗑️ Eliminar</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,17 @@
+# Build outputs
+**/bin/
+**/obj/
+**/.vs/
+
+# NuGet packages
+**/packages/
+**/*.user
+**/*.suo
+
+# IDE files
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db

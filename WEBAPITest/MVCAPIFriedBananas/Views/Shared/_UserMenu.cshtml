@@ -1,0 +1,46 @@
+﻿@using MVCAPIFriedBananas.Models
+@inject MVCAPIFriedBananas.Services.UsersApiClient UsersApiClient
+
+@{
+    CurrentUserDto? user = null;
+    var token = Context.Session.GetString("JwtToken");
+    if (!string.IsNullOrEmpty(token))
+    {
+        try { user = await UsersApiClient.GetCurrentUserAsync(); }
+        catch { user = null; }
+    }
+
+    string GetInitials(string? name)
+    {
+        if (string.IsNullOrWhiteSpace(name)) return "?";
+        var parts = name.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        if (parts.Length == 1) return parts[0].Substring(0, 1).ToUpperInvariant();
+        return (parts[0].Substring(0, 1) + parts[^1].Substring(0, 1)).ToUpperInvariant();
+    }
+}
+
+@if (user != null)
+{
+    <div class="user-menu inline-pills">
+        <span class="avatar">@GetInitials(user.FullName)</span>
+        <span class="user-info text-start">
+            <span class="user-name">@user.FullName</span>
+            <small class="user-email">@user.Email</small>
+        </span>
+        <div class="user-pill-links">
+            <a class="btn pill ghost btn-sm" href="@Url.Action("Details", "Users")">Perfil</a>
+            <a class="btn pill ghost btn-sm" href="@Url.Action("Index", "Booking")">Minhas marcações</a>
+            <a class="btn pill ghost btn-sm" href="@Url.Action("Index", "Cart")">Carrinho</a>
+            <form method="post" asp-controller="Auth" asp-action="Logout" class="d-inline m-0">
+                <button type="submit" class="btn pill ghost btn-sm logout-link">Sair</button>
+            </form>
+        </div>
+    </div>
+}
+else
+{
+    <div class="user-menu guest">
+        <a class="btn pill ghost btn-sm" href="@Url.Action("Login", "Auth")">Entrar</a>
+        <a class="btn pill primary btn-sm" href="@Url.Action("Register", "Auth")">Registar</a>
+    </div>
+}

@@ -1,0 +1,14 @@
+﻿-- https://www.postman.com/api-platform/api-authentication/
+----
+It involves sending credentials as user/password pairs in an Authorization header field, where the credentials are 
+encoded using Base64. However, these credentials are not hashed or encrypted, which makes this authentication mechanism
+insecure unless it is used in conjunction with HTTPS.
+----
+
+Autenticação de API é o mecanismo que permite verificar se quem está fazendo uma requisição para sua API 
+realmente tem permissão para acessá-la (ou seja, "quem é você e você pode fazer isso?").
+Em um contexto comum de desenvolvimento C# (ASP.NET Core), onde você tem um frontend 
+web (Blazor, React, Angular, Razor Pages, etc.) conversando com uma API que acessa um 
+banco de dados (SQL Server, PostgreSQL, etc.), a autenticação é essencial para proteger 
+os dados e as operações.
+

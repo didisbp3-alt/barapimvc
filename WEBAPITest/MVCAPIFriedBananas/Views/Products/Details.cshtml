@@ -1,0 +1,132 @@
+@model MVCAPIFriedBananas.Views.ViewModels.ProductsViewModel
+@using System.Security.Claims
+@{
+    ViewData["Title"] = Model.Name ?? "Produto";
+    var culture = System.Globalization.CultureInfo.GetCultureInfo("pt-PT");
+    var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+    bool isStaff = userRole == "0" || userRole == "1";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/products.css" />
+}
+
+<div class="products-page" style="max-width:900px;">
+    <div style="margin-bottom:1.25rem;">
+        <a asp-action="@(isStaff ? "AdminIndex" : "Index")" class="btn btn-ghost btn-small" style="display:inline-flex;align-items:center;gap:0.4rem;">
+            ← Voltar à lista
+        </a>
+    </div>
+
+    <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.4fr); gap:1.5rem; align-items:start;">
+
+        <!-- Image -->
+        <div class="card" style="overflow:hidden; border-radius:1.125rem; padding:0;">
+            <img src="@(string.IsNullOrWhiteSpace(Model.ImageUrl) ? "/images/products/default.jpg" : Model.ImageUrl)"
+                 alt="@Model.Name"
+                 style="width:100%; display:block; object-fit:cover; aspect-ratio:4/3;"
+                 onerror="this.src='/images/products/default.jpg'" />
+        </div>
+
+        <!-- Info -->
+        <div class="card" style="padding:1.5rem; border-radius:1.125rem;">
+            <div class="meta mb-2">
+                <strong class="accent">@Model.CategoryName</strong>
+                @if (Model.DiscountPercent > 0)
+                {
+                    <span class="discount-pill" style="position:static; display:inline-block; margin-left:0.5rem;">-@Model.DiscountPercent%</span>
+                }
+            </div>
+
+            <h2 style="font-size:1.4rem; font-weight:800; color:var(--p-text); margin:0 0 0.5rem;">@Model.Name</h2>
+
+            @if (!string.IsNullOrWhiteSpace(Model.Description))
+            {
+                <p class="muted" style="margin-bottom:1rem;">@Model.Description</p>
+            }
+
+            <div style="display:flex; align-items:baseline; gap:0.75rem; margin-bottom:1rem;">
+                <span class="price" style="font-size:1.6rem;">@Model.Price.ToString("C", culture)</span>
+            </div>
+
+            <div class="tags mb-3">
+                @if (Model.StockCurrent.HasValue && Model.StockMax.HasValue)
+                {
+                    <span class="tag">📦 Stock @Model.StockCurrent/@Model.StockMax</span>
+                }
+            </div>
+
+            @if (isStaff)
+            {
+                <!-- Admin: no cart button, only edit -->
+                <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:0.5rem;">
+                    <a asp-action="Edit" asp-route-id="@Model.ProdId" class="btn btn-primary btn-small">
+                        ✏️ Editar produto
+                    </a>
+                    <a asp-action="AdminIndex" class="btn btn-ghost btn-small">
+                        ← Voltar
+                    </a>
+                </div>
+            }
+            else
+            {
+                <!-- Regular user: show cart button -->
+                <div style="display:flex; gap:0.75rem; flex-wrap:wrap; align-items:center; margin-top:0.5rem;">
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <button type="button"
+                                class="btn btn-primary btn-small"
+                                data-add-cart
+                                data-product-id="@Model.ProdId"
+                                @((Model.StockCurrent ?? 0) <= 0 ? "disabled" : "")>
+                            🛒 Adicionar ao carrinho
+                        </button>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Login", "Auth")" class="btn btn-primary btn-small">
+                            Inicia sessão para comprar
+                        </a>
+                    }
+                    <a asp-action="Index" class="btn btn-ghost btn-small">← Continuar</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const token = document.querySelector('meta[name="request-verification-token"]')?.content;
+        const isLoggedIn = @Json.Serialize(User.Identity?.IsAuthenticated ?? false);
+
+        document.querySelectorAll('[data-add-cart]').forEach(btn => {
+            btn.onclick = async () => {
+                if (!isLoggedIn) { window.location.href = '/Auth/Login'; return; }
+                const id = btn.getAttribute('data-product-id');
+                const orig = btn.textContent;
+                btn.disabled = true; btn.textContent = '...';
+                try {
+                    const params = new URLSearchParams();
+                    params.append('id', id); params.append('qty', 1);
+                    if (token) params.append('__RequestVerificationToken', token);
+                    const res = await fetch('@Url.Action("Add", "Cart")', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'X-Requested-With': 'XMLHttpRequest' },
+                        body: params.toString()
+                    });
+                    if (res.status === 401 || res.redirected) { window.location.href = '/Auth/Login'; return; }
+                    if (!res.ok) throw new Error('Erro');
+                    const json = await res.json().catch(() => ({}));
+                    const badge = document.querySelector('[data-cart-count]');
+                    if (badge && json?.cartCount !== undefined) badge.textContent = json.cartCount;
+                    btn.textContent = '✓ Adicionado'; btn.style.background = '#22c55e';
+                    setTimeout(() => { btn.textContent = orig; btn.style.background = ''; btn.disabled = false; }, 1500);
+                } catch (e) {
+                    console.error(e); btn.textContent = orig; btn.disabled = false;
+                    alert('Não foi possível adicionar ao carrinho.');
+                }
+            };
+        });
+    </script>
+}
