@@ -1,0 +1,23 @@
+﻿@model MVCAPIFriedBananas.Models.UserAdminDto
+@{
+    ViewData["Title"] = "Eliminar Utilizador";
+}
+
+<div class="d-flex justify-content-center align-items-center" style="min-height: 60vh;">
+    <div class="card" style="max-width: 420px; width: 100%; padding: 2rem 2rem 1.5rem 2rem; box-shadow: var(--shadow); border-radius: var(--radius);">
+        <h2 class="mb-3 text-center" style="font-weight:700; color:var(--brand);">Eliminar Utilizador</h2>
+        <div class="mb-3 text-center">
+            <strong>@Model.FullName</strong>
+            <div class="muted">@Model.Email</div>
+            <div class="muted">ID: @Model.UId</div>
+            <div class="mt-2 text-danger fw-bold">Tem a certeza que deseja eliminar este utilizador? Esta ação não pode ser desfeita.</div>
+        </div>
+        <form asp-action="Delete" asp-controller="Users" method="post">
+            <input type="hidden" asp-for="UId" />
+            <button type="submit" class="btn btn-danger btn-small w-100 mb-2" style="font-weight:700;">Eliminar</button>
+            <div class="text-center mt-2">
+                <a asp-action="Index" class="btn btn-ghost btn-small">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>

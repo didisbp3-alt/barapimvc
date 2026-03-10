@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVCAPIFriedBananas.Models;
 using MVCAPIFriedBananas.Services;
 
@@ -37,6 +38,39 @@ namespace MVCAPIFriedBananas.Controllers
             };
 
             return View(viewModel);
+        }
+
+        [Authorize(Policy = "AdminOnly")]
+        public async Task<IActionResult> Index()
+        {
+            var users = await _usersApiClient.GetAllUsersAsync();
+            return View(users);
+        }
+
+        [Authorize(Policy = "AdminOnly")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var user = await _usersApiClient.GetUserByIdAsync(id);
+            if (user == null)
+                return NotFound();
+            return View(user);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [Authorize(Policy = "AdminOnly")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var success = await _usersApiClient.DeleteUserAsync(id);
+            if (!success)
+            {
+                TempData["Error"] = "Erro ao eliminar utilizador.";
+            }
+            else
+            {
+                TempData["SuccessMessage"] = "Utilizador eliminado com sucesso.";
+            }
+            return RedirectToAction(nameof(Index));
         }
     }
 }

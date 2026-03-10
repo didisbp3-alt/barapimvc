@@ -83,7 +83,11 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminOnly", policy =>
+        policy.RequireClaim(System.Security.Claims.ClaimTypes.Role, "0"));
+});
 builder.Services.AddTransient<ApiAuthHandler>();
 
 var app = builder.Build();
